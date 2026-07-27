@@ -1501,6 +1501,15 @@ strong { color: var(--color-text); font-weight: 600; }
     font-size: 0.76rem;
   }
 
+  .nav__link {
+    font-size: 0.92rem;
+  }
+
+  .nav__cta.btn--sm {
+    font-size: 0.82rem;
+    padding: 0.8em 1.7em;
+  }
+
   .grid-2 { grid-template-columns: 1fr 1fr; }
   .grid-3 { grid-template-columns: repeat(3, 1fr); }
 

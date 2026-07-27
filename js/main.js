@@ -6,6 +6,7 @@
    B. Mobile navigation toggle
    C. Scroll-triggered reveal animations
    D. Active navigation link highlighting
+   E. Expand / collapse toggle
    ============================================================ */
 
 (function () {
@@ -135,5 +136,33 @@
 
   markActiveLinks('.nav__link');
   markActiveLinks('.mobile-menu__link');
+
+
+  /* ─────────────────────────────────────────────
+     E. EXPAND / COLLAPSE TOGGLE
+     Buttons with [data-target] toggle .is-expanded
+     on the matching #id element, and update their
+     own label + arrow direction.
+  ───────────────────────────────────────────── */
+  document.querySelectorAll('.expand-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      const targetId = btn.getAttribute('data-target');
+      const content  = document.getElementById(targetId);
+      if (!content) return;
+
+      const isExpanded = content.classList.toggle('is-expanded');
+      btn.classList.toggle('is-expanded', isExpanded);
+      btn.setAttribute('aria-expanded', String(isExpanded));
+
+      const label = btn.querySelector('.expand-toggle__text');
+      if (label) {
+        label.textContent = isExpanded ? 'Închide' : btn.dataset.labelOpen || 'Citește mai mult';
+      }
+    });
+
+    // Store the original open label so we can restore it on collapse
+    const label = btn.querySelector('.expand-toggle__text');
+    if (label) btn.dataset.labelOpen = label.textContent;
+  });
 
 })();

@@ -100,6 +100,7 @@
         </div>
 
         <div class="what-is-coaching__box js-reveal js-reveal-delay-1">
+          <!-- Mereu vizibil -->
           <p>
             Coaching-ul este un proces de dezvoltare personală bazat pe dialog, în care
             <strong>nu îți spun ce să faci</strong>, ci te ajut să descoperi singur ce vrei,
@@ -112,12 +113,19 @@
             <span class="not-tag"><span class="not-tag__x">✕</span> Nu este mentorat</span>
           </div>
 
-          <p>Nu tratează probleme psihologice, nu oferă soluții gata făcute și nu predă din experiența mea.</p>
+          <!-- Expandabil -->
+          <div class="expand-content" id="coaching-details">
+            <p style="margin-top: var(--space-5);">Nu tratează probleme psihologice, nu oferă soluții gata făcute și nu predă din experiența mea.</p>
+            <p class="what-is-coaching__is">
+              Coaching-ul este un spațiu în care tu ești expertul propriei tale vieți,<br>
+              iar eu sunt cel care pune întrebările potrivite.
+            </p>
+          </div>
 
-          <p class="what-is-coaching__is">
-            Coaching-ul este un spațiu în care tu ești expertul propriei tale vieți,<br>
-            iar eu sunt cel care pune întrebările potrivite.
-          </p>
+          <button class="expand-toggle" data-target="coaching-details" aria-expanded="false">
+            <span class="expand-toggle__text">Citește mai mult</span>
+            <em class="expand-toggle__arrow" aria-hidden="true">↓</em>
+          </button>
         </div>
 
       </div>
@@ -140,42 +148,52 @@
           </p>
         </div>
 
-        <div class="expectations__grid">
+        <!-- Expandabile: toate 4 + fraza finală -->
+        <div class="expand-content" id="expect-details">
+          <div class="expectations__grid">
 
-          <div class="expectation-item js-reveal js-reveal-delay-1">
-            <div class="expectation-item__icon" aria-hidden="true">01</div>
-            <p class="expectation-item__text">
-              <strong>Mai multă claritate</strong> asupra a ceea ce vor cu adevărat
-            </p>
+            <div class="expectation-item">
+              <div class="expectation-item__icon" aria-hidden="true">01</div>
+              <p class="expectation-item__text">
+                <strong>Mai multă claritate</strong> asupra a ceea ce vor cu adevărat
+              </p>
+            </div>
+
+            <div class="expectation-item">
+              <div class="expectation-item__icon" aria-hidden="true">02</div>
+              <p class="expectation-item__text">
+                <strong>Un prim pas concret</strong> pe care l-au făcut și nu l-ar fi făcut singuri
+              </p>
+            </div>
+
+            <div class="expectation-item">
+              <div class="expectation-item__icon" aria-hidden="true">03</div>
+              <p class="expectation-item__text">
+                <strong>Mai puțină paralizie</strong> în fața deciziilor
+              </p>
+            </div>
+
+            <div class="expectation-item">
+              <div class="expectation-item__icon" aria-hidden="true">04</div>
+              <p class="expectation-item__text">
+                <strong>O relație mai onestă</strong> cu ei înșiși
+              </p>
+            </div>
+
           </div>
 
-          <div class="expectation-item js-reveal js-reveal-delay-2">
-            <div class="expectation-item__icon" aria-hidden="true">02</div>
-            <p class="expectation-item__text">
-              <strong>Un prim pas concret</strong> pe care l-au făcut și nu l-ar fi făcut singuri
-            </p>
-          </div>
-
-          <div class="expectation-item js-reveal js-reveal-delay-3">
-            <div class="expectation-item__icon" aria-hidden="true">03</div>
-            <p class="expectation-item__text">
-              <strong>Mai puțină paralizie</strong> în fața deciziilor
-            </p>
-          </div>
-
-          <div class="expectation-item js-reveal js-reveal-delay-4">
-            <div class="expectation-item__icon" aria-hidden="true">04</div>
-            <p class="expectation-item__text">
-              <strong>O relație mai onestă</strong> cu ei înșiși
-            </p>
-          </div>
-
+          <p class="text-center"
+             style="font-style:italic;color:var(--color-text-secondary);margin-top:1.5rem;">
+            Coaching-ul nu rezolvă problemele în locul tău. Te ajută să le rezolvi tu.
+          </p>
         </div>
 
-        <p class="text-center js-reveal"
-           style="font-style:italic;color:var(--color-text-secondary);margin-top:1rem;">
-          Coaching-ul nu rezolvă problemele în locul tău. Te ajută să le rezolvi tu.
-        </p>
+        <div class="text-center">
+          <button class="expand-toggle" data-target="expect-details" aria-expanded="false">
+            <span class="expand-toggle__text">Vezi rezultatele</span>
+            <em class="expand-toggle__arrow" aria-hidden="true">↓</em>
+          </button>
+        </div>
 
       </div>
     </section>

@@ -1487,6 +1487,20 @@ strong { color: var(--color-text); font-weight: 600; }
   .nav__cta   { display: inline-flex; }
   .hamburger  { display: none; }
 
+  .header__logo-mark {
+    width: 54px;
+    height: 54px;
+    font-size: 1.5rem;
+  }
+
+  .header__logo-text {
+    font-size: 1.3rem;
+  }
+
+  .header__logo-sub {
+    font-size: 0.76rem;
+  }
+
   .grid-2 { grid-template-columns: 1fr 1fr; }
   .grid-3 { grid-template-columns: repeat(3, 1fr); }
 

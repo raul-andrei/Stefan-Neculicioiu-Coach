@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ștefan Neculicioiu · Youth Coach</title>
+  <meta name="description" content="Coaching pentru tineri care s-au pierdut pe drum. Găsim claritate, sens și curajul primului pas împreună.">
+  <meta property="og:title" content="Ștefan Neculicioiu · Youth Coach">
+  <meta property="og:description" content="Coaching pentru tineri care s-au pierdut pe drum, ca să găsești claritate, sens și curajul primului pas.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER START ========== -->
+  <header class="header" role="banner">
+    <div class="container">
+      <div class="header__inner">
+
+        <a href="index.html" class="header__logo" aria-label="Ștefan Neculicioiu – Acasă">
+          <div class="header__logo-mark" aria-hidden="true">Ș</div>
+          <div class="header__logo-text">
+            Ștefan Neculicioiu
+            <span class="header__logo-sub">Youth Coach</span>
+          </div>
+        </a>
+
+        <nav role="navigation" aria-label="Navigare principală">
+          <ul class="nav__list">
+            <li><a href="index.html"    class="nav__link">Acasă</a></li>
+            <li><a href="servicii.html" class="nav__link">Servicii</a></li>
+            <li><a href="blog.html"     class="nav__link">Blog</a></li>
+            <li><a href="contact.html"  class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- NOTĂ: Înlocuiește cu link-ul tău Calendly -->
+        <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
+           class="btn btn--primary btn--sm nav__cta">
+          Rezervă gratuit
+        </a>
+
+        <button class="hamburger" aria-label="Deschide meniu" aria-expanded="false">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" role="dialog" aria-label="Meniu mobil">
+    <ul class="mobile-menu__list">
+      <li><a href="index.html"    class="mobile-menu__link">Acasă</a></li>
+      <li><a href="servicii.html" class="mobile-menu__link">Servicii</a></li>
+      <li><a href="blog.html"     class="mobile-menu__link">Blog</a></li>
+      <li><a href="contact.html"  class="mobile-menu__link">Contact</a></li>
+    </ul>
+    <div class="mobile-menu__cta">
+      <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
+         class="btn btn--primary btn--lg">
+        Rezervă ședința gratuită
+      </a>
+    </div>
+  </div>
+  <!-- ========== HEADER END ========== -->
+
+
+  <main>
+
+    <!-- ══════════════════════════════════════
+         HERO
+    ══════════════════════════════════════ -->
+    <section class="hero" aria-label="Introducere">
+
+      <!-- Abstract watercolor background (CSS/SVG) -->
+      <div class="hero__watercolor" aria-hidden="true">
+        <svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg"
+             preserveAspectRatio="xMidYMid slice" role="presentation">
+          <defs>
+            <filter id="wc1" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur stdDeviation="65"/>
+            </filter>
+            <filter id="wc2" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur stdDeviation="80"/>
+            </filter>
+            <filter id="wc3" x="-60%" y="-60%" width="220%" height="220%">
+              <feGaussianBlur stdDeviation="55"/>
+            </filter>
+          </defs>
+          <rect width="1440" height="900" fill="#FDFAF6"/>
+          <!-- Peach — upper right -->
+          <ellipse cx="1180" cy="160" rx="420" ry="340" fill="#E8926A" opacity="0.32" filter="url(#wc1)"/>
+          <!-- Teal — left middle -->
+          <ellipse cx="160"  cy="520" rx="360" ry="300" fill="#7BB8C4" opacity="0.28" filter="url(#wc2)"/>
+          <!-- Sage — lower right -->
+          <ellipse cx="980"  cy="820" rx="440" ry="300" fill="#8AAF9F" opacity="0.24" filter="url(#wc1)"/>
+          <!-- Small peach — top left -->
+          <ellipse cx="80"   cy="80"  rx="220" ry="180" fill="#E8926A" opacity="0.18" filter="url(#wc3)"/>
+          <!-- Small teal — bottom center -->
+          <ellipse cx="620"  cy="860" rx="240" ry="160" fill="#7BB8C4" opacity="0.16" filter="url(#wc3)"/>
+          <!-- Sage accent — upper center -->
+          <ellipse cx="580"  cy="80"  rx="200" ry="160" fill="#8AAF9F" opacity="0.14" filter="url(#wc3)"/>
+        </svg>
+      </div>
+
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__label label">Youth Coaching · Online</span>
+          <h1 class="hero__heading">
+            YOUR JOURNEY,<br>
+            YOUR <em>CLARITY</em>,<br>
+            YOUR ACTION.
+          </h1>
+          <p class="hero__subtitle">
+            Coaching pentru tineri care s-au pierdut pe drum, ca să găsești claritate, sens și curajul primului pas.
+          </p>
+          <div class="hero__actions">
+            <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
+               class="btn btn--primary btn--lg">
+              Rezervă o ședință gratuită de cunoaștere
+            </a>
+            <a href="servicii.html" class="btn btn--ghost btn--lg">
+              Află mai multe
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero__scroll-arrow"></div>
+      </div>
+
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         DACĂ AI ÎNTRE 18 ȘI 28 DE ANI
+    ══════════════════════════════════════ -->
+    <section class="section section-sage" aria-labelledby="pain-heading">
+      <div class="container">
+
+        <div class="pain-points__intro text-center js-reveal">
+          <span class="label">Dacă ai între 18 și 28 de ani</span>
+          <h2 id="pain-heading" class="section-heading" style="margin-top:0.5rem;">
+            Citește asta
+          </h2>
+        </div>
+
+        <div class="pain-points__grid">
+
+          <div class="pain-point-card js-reveal js-reveal-delay-1">
+            <span class="pain-point-card__icon" aria-hidden="true">✦</span>
+            <p class="pain-point-card__text">
+              M-am trezit într-un punct în care nu știu ce urmează, și întrebarea asta mă apasă mai mult decât aș vrea să recunosc.
+            </p>
+          </div>
+
+          <div class="pain-point-card js-reveal js-reveal-delay-2">
+            <span class="pain-point-card__icon" aria-hidden="true">✦</span>
+            <p class="pain-point-card__text">
+              Vreau schimbare, dar nu știu de unde să încep, și cu fiecare zi care trece, indecizia devine mai grea.
+            </p>
+          </div>
+
+          <div class="pain-point-card js-reveal js-reveal-delay-3">
+            <span class="pain-point-card__icon" aria-hidden="true">✦</span>
+            <p class="pain-point-card__text">
+              Mă compar des cu ceilalți și ies în pierdere, parcă toți au un plan, o direcție, o certitudine pe care eu nu o simt.
+            </p>
+          </div>
+
+          <div class="pain-point-card js-reveal js-reveal-delay-4">
+            <span class="pain-point-card__icon" aria-hidden="true">✦</span>
+            <p class="pain-point-card__text">
+              Am senzația că toți știu ce vor să facă în viață, doar eu nu, și asta mă face să mă îndoiesc de mine însumi.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="pain-points__cta-block js-reveal">
+          <p class="pain-points__cta-text">
+            Dacă te regăsești în cel puțin una dintre afirmațiile de mai sus, nu mai amâna!
+          </p>
+          <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
+             class="btn btn--primary btn--lg">
+            Rezervă o ședință gratuită
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         DE CE EU (Povestea lui Ștefan)
+    ══════════════════════════════════════ -->
+    <section class="section about-story" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about-story__inner">
+
+          <!-- Foto placeholder -->
+          <div class="about-story__visual js-reveal">
+            <div class="about-story__photo-frame">
+              <!--
+                NOTĂ: Înlocuiește div-ul de mai jos cu fotografia ta:
+                <img src="assets/stefan.jpg" alt="Ștefan Neculicioiu" style="border-radius:24px;width:100%;">
+              -->
+              <div class="about-story__photo-placeholder">
+                <svg aria-hidden="true" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="var(--color-secondary)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.45"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></svg>
+                <p>Adaugă fotografia ta aici,<br>naturală, caldă, nu studio formal</p>
+              </div>
+              <div class="about-story__accent-dot" aria-hidden="true"></div>
+            </div>
+          </div>
+
+          <!-- Text -->
+          <div class="about-story__text js-reveal js-reveal-delay-1">
+            <span class="label">De ce eu</span>
+            <h2 id="about-heading" style="margin-top:0.5rem;">
+              Și eu am trecut prin aceeași incertitudine.
+            </h2>
+
+            <p>
+              Când am terminat liceul la 19 ani, nu aveam habar ce vreau să fac mai departe. Eram deschis la orice și tocmai valul ăsta de opțiuni nelimitate m-a făcut să îngheț de frică, întrebându-mă: <strong>«Și acum ce?»</strong>
+            </p>
+
+            <p>
+              Am decis să mă las pe mâna unui prieten care îmi recomandase o școală de arte în Olanda, unde am urmat un curs de videografie timp de șase luni. O experiență cu adevărat frumoasă: am învățat multe, am trăit pe cont propriu într-o țară străină. Însă tot timpul îmi apărea același gând: <strong>«Ok, termin cursul ăsta și după ce?»</strong>
+            </p>
+
+            <p>
+              Răspunsul a venit de la o colegă de curs care mi-a pus exact aceeași întrebare. Auzind-o din afară, simțindu-mă obligat să răspund, răspunsul a venit aproape instant: <strong>«Vreau să mă întorc acasă și să intru la facultatea de psihologie.»</strong>
+            </p>
+
+            <p>
+              Fusese acolo tot timpul. Aveam nevoie de cineva care să pună întrebarea potrivită. Întors acasă, m-am consultat cu mentorul meu în coaching, Mioara Soldan MCC, am urmat un an și jumătate de formare, am acumulat peste 40 de ore de experiență în sesiuni și am absolvit Facultatea de Psihologie a Universității Titu Maiorescu în 2026.
+            </p>
+
+            <blockquote class="about-story__highlight">
+              Asta vreau să fac și eu cu tine. Găsim claritate și sens asupra obiectivelor tale și curajul de a face primul pas, printr-un dialog de la egal la egal, fără judecată.
+            </blockquote>
+
+            <div class="about-story__credentials">
+              <span class="credential-badge">✓ Formare coaching: 1,5 ani</span>
+              <span class="credential-badge">✓ 40+ ore de sesiuni</span>
+              <span class="credential-badge">✓ Psihologie, Univ. Titu Maiorescu 2026</span>
+              <span class="credential-badge">✓ Mentor: Mioara Soldan MCC</span>
+            </div>
+
+            <div style="margin-top:2rem;">
+              <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
+                 class="btn btn--primary">
+                Rezervă ședința gratuită de cunoaștere
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════
+         FINAL CTA BANNER
+    ══════════════════════════════════════ -->
+    <section class="section--sm section-teal text-center">
+      <div class="container">
+        <div class="js-reveal" style="max-width:620px;margin:0 auto;">
+          <h2 style="margin-bottom:1rem;">Gata să faci primul pas?</h2>
+          <p class="section-intro" style="margin-bottom:2rem;margin-left:auto;margin-right:auto;">
+            Prima ședință de cunoaștere este gratuită: 90 de minute în care vorbim, fără angajamente.
+          </p>
+          <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
+             class="btn btn--primary btn--lg">
+            Rezervă acum, e gratuit
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========== FOOTER START ========== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+
+        <div>
+          <div class="footer__brand-name">Ștefan Neculicioiu</div>
+          <p class="footer__tagline">Youth Coach · claritate, sens, primul pas.</p>
+        </div>
+
+        <div>
+          <div class="footer__heading">Pagini</div>
+          <ul class="footer__links">
+            <li><a href="index.html"    class="footer__link">Acasă</a></li>
+            <li><a href="servicii.html" class="footer__link">Servicii &amp; Prețuri</a></li>
+            <li><a href="blog.html"     class="footer__link">Blog</a></li>
+            <li><a href="contact.html"  class="footer__link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer__heading">Contact</div>
+          <div class="footer__contact-item">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+            <a href="mailto:stefanneculicioiu@gmail.com">stefanneculicioiu@gmail.com</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <a href="https://wa.me/40744494721" target="_blank" rel="noopener">
+              +40 744 494 721 (WhatsApp)
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Ștefan Neculicioiu. Toate drepturile rezervate.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- ========== FOOTER END ========== -->
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

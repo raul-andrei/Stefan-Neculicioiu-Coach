@@ -758,6 +758,13 @@ strong { color: var(--color-text); font-weight: 600; }
   align-items: start;
 }
 
+/* Both grid children must have min-width:0 to allow shrinking */
+.about-story__visual,
+.about-story__text {
+  min-width: 0;
+  width: 100%;
+}
+
 .about-story__photo-frame {
   position: relative;
   width: 100%;
@@ -790,6 +797,8 @@ strong { color: var(--color-text); font-weight: 600; }
 
 .about-story__photo {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   aspect-ratio: 3/4;
   object-fit: cover;
   object-position: center top;
@@ -811,6 +820,7 @@ strong { color: var(--color-text); font-weight: 600; }
 
 .about-story__text h2 { margin-bottom: var(--space-6); }
 .about-story__text p  { margin-bottom: var(--space-5); font-size: 1rem; }
+.about-story__text .btn { white-space: normal; text-align: center; width: 100%; }
 
 /* Pull-quote — editorial style, no background box */
 .about-story__highlight {

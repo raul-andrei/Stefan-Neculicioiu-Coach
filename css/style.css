@@ -292,6 +292,11 @@ strong { color: var(--color-text); font-weight: 600; }
 
 .header__logo:hover .header__logo-mark { transform: scale(1.06); }
 
+.header__logo-mark--photo {
+  object-fit: cover;
+  object-position: center top;
+}
+
 .header__logo-text {
   font-family: var(--font-serif);
   font-size: 1.1rem;
@@ -773,6 +778,15 @@ strong { color: var(--color-text); font-weight: 600; }
   max-width: 22ch;
   color: var(--color-text-muted);
   font-weight: 300;
+}
+
+.about-story__photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius-lg);
+  display: block;
 }
 
 .about-story__accent-dot {

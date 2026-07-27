@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
-h1 { font-size: clamp(2.4rem, 8vw, 6rem);   letter-spacing: -0.03em; }
+h1 { font-size: clamp(2rem, 8vw, 6rem);   letter-spacing: -0.03em; }
 h2 { font-size: clamp(2rem, 4.5vw, 3.4rem); letter-spacing: -0.02em; }
 h3 { font-size: clamp(1.4rem, 2.8vw, 2rem); letter-spacing: -0.01em; }
 h4 { font-size: 1.2rem; }
@@ -272,6 +272,7 @@ strong { color: var(--color-text); font-weight: 600; }
   align-items: center;
   gap: var(--space-3);
   text-decoration: none;
+  min-width: 0; /* allow shrinking on mobile */
 }
 
 .header__logo-mark {
@@ -304,6 +305,8 @@ strong { color: var(--color-text); font-weight: 600; }
   color: var(--color-text);
   line-height: 1.2;
   letter-spacing: -0.01em;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .header__logo-sub {
@@ -358,9 +361,11 @@ strong { color: var(--color-text); font-weight: 600; }
   gap: 5px;
   width: 36px;
   height: 36px;
+  min-width: 36px; /* never shrink in flex row */
   padding: 4px;
   cursor: pointer;
   z-index: 110;
+  flex-shrink: 0;
 }
 
 .hamburger__line {
@@ -482,6 +487,7 @@ strong { color: var(--color-text); font-weight: 600; }
   font-weight: 300;
   color: rgba(246, 241, 235, 0.6);
   margin-bottom: var(--space-3);
+  word-break: break-all;
 }
 
 .footer__contact-item a { transition: color var(--ease-fast); }
@@ -604,7 +610,7 @@ strong { color: var(--color-text); font-weight: 600; }
 
 .hero__heading {
   font-family: var(--font-serif);
-  font-size: clamp(2.4rem, 9vw, 7rem);
+  font-size: clamp(2rem, 9vw, 7rem);
   font-weight: 700;
   color: var(--color-text);
   line-height: 1.0;
@@ -756,6 +762,7 @@ strong { color: var(--color-text); font-weight: 600; }
   width: 100%;
   max-width: 420px;
   margin: 0 auto;
+  overflow: hidden; /* contain accent dot on mobile */
 }
 
 .about-story__photo-placeholder {
@@ -1514,6 +1521,7 @@ strong { color: var(--color-text); font-weight: 600; }
   .grid-3 { grid-template-columns: repeat(3, 1fr); }
 
   .about-story__inner { grid-template-columns: 1fr 1.5fr; gap: var(--space-16); }
+  .about-story__photo-frame { overflow: visible; }
   .contact-grid       { grid-template-columns: 1fr 1fr; gap: var(--space-16); }
   .blog-grid          { grid-template-columns: repeat(3, 1fr); }
 }

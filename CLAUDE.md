@@ -33,7 +33,7 @@ It compares the words of visible text + `alt`/`aria-label`/`title`/meta against 
 - **`js/main.js`** is one vanilla IIFE with no dependencies; its first statement sets `window.mainReady`. An inline `<head>` script adds `html.js` and removes it after 3s if `main.js` never ran — all JS-only states (collapsed expanders, undeveloped photos, undrawn circles) are scoped under `.js`. Hooks:
   - `.js-reveal` → gets `.is-visible` via IntersectionObserver. Used only on `.develop` photo frames and `.mark-circle` (no generic fade-ins).
   - `.expand-toggle[data-target="<id>"]` with a `.expand-toggle__text` label → toggles `.is-expanded` on `#<id>`; the label switches to "Închide" and back. The target must wrap its content in `.expand-content__inner` (it animates `grid-template-rows`).
-  - `.hamburger` / `.mobile-menu` / `.mobile-menu__link` → mobile nav (`.is-open`, locks body scroll, Escape closes).
+  - `.hamburger` / `.mobile-menu` / `.mobile-menu__link` → mobile nav (`.is-open`, Escape closes). Scroll lock is `html.menu-open` + `body { position: fixed; top: -<scrollY> }` (overflow on `body` alone doesn't work because `html` sets `overflow-x`); the scroll position is restored on close.
   - `.nav__link` / `.mobile-menu__link` → `.is-active` is set automatically from the URL; don't hard-code it.
   - `.header` gets `.header--scrolled` after 50px of scroll.
 - **Images**: pages use the resized copies in `assets/web/` (provenance in `assets/web/PROVENANCE.md`); originals stay in `assets/`.

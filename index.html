@@ -70,124 +70,92 @@
 
   <main>
 
-    <!-- ══════════════════════════════════════
-         HERO
-    ══════════════════════════════════════ -->
+    <!-- HERO: the selected frame -->
     <section class="hero" aria-label="Introducere">
+      <div class="wrap hero__grid">
 
-      <!-- Abstract watercolor background (CSS/SVG) -->
-      <div class="hero__watercolor" aria-hidden="true">
-        <svg viewBox="0 0 1440 900" xmlns="http://www.w3.org/2000/svg"
-             preserveAspectRatio="xMidYMid slice" role="presentation">
-          <defs>
-            <filter id="wc1" x="-60%" y="-60%" width="220%" height="220%">
-              <feGaussianBlur stdDeviation="65"/>
-            </filter>
-            <filter id="wc2" x="-60%" y="-60%" width="220%" height="220%">
-              <feGaussianBlur stdDeviation="80"/>
-            </filter>
-            <filter id="wc3" x="-60%" y="-60%" width="220%" height="220%">
-              <feGaussianBlur stdDeviation="55"/>
-            </filter>
-          </defs>
-          <rect width="1440" height="900" fill="#FDFAF6"/>
-          <!-- Peach — upper right -->
-          <ellipse cx="1180" cy="160" rx="420" ry="340" fill="#E8926A" opacity="0.32" filter="url(#wc1)"/>
-          <!-- Teal — left middle -->
-          <ellipse cx="160"  cy="520" rx="360" ry="300" fill="#7BB8C4" opacity="0.28" filter="url(#wc2)"/>
-          <!-- Sage — lower right -->
-          <ellipse cx="980"  cy="820" rx="440" ry="300" fill="#8AAF9F" opacity="0.24" filter="url(#wc1)"/>
-          <!-- Small peach — top left -->
-          <ellipse cx="80"   cy="80"  rx="220" ry="180" fill="#E8926A" opacity="0.18" filter="url(#wc3)"/>
-          <!-- Small teal — bottom center -->
-          <ellipse cx="620"  cy="860" rx="240" ry="160" fill="#7BB8C4" opacity="0.16" filter="url(#wc3)"/>
-          <!-- Sage accent — upper center -->
-          <ellipse cx="580"  cy="80"  rx="200" ry="160" fill="#8AAF9F" opacity="0.14" filter="url(#wc3)"/>
-        </svg>
-      </div>
-
-      <div class="container">
         <div class="hero__content">
-          <span class="hero__label label">Youth Coaching · Online</span>
-          <h1 class="hero__heading">
+          <h1 class="hero__heading display display--xl">
             YOUR JOURNEY,<br>
             YOUR <em>CLARITY</em>,<br>
             YOUR ACTION.
           </h1>
-          <p class="hero__subtitle">
+          <p class="hero__subtitle lede">
             Coaching pentru tineri care s-au pierdut pe drum, ca să găsești claritate, sens și curajul primului pas.
           </p>
-          <div class="hero__actions">
-            <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
-               class="btn btn--primary btn--lg">
-              Rezervă o ședință gratuită de cunoaștere
-            </a>
-            <a href="servicii.html" class="btn btn--ghost btn--lg">
+          <div class="actions hero__actions">
+            <span class="mark-circle js-reveal">
+              <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
+                 class="btn btn--primary">
+                Rezervă o ședință gratuită de cunoaștere
+              </a>
+              <svg class="mark-circle__svg" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="mark-circle__path" pathLength="1" d="M30 10 C 80 0, 170 2, 194 30 C 204 52, 170 76, 100 78 C 40 79, 2 66, 4 42 C 6 20, 40 8, 90 6 C 110 5, 130 6, 146 9"/></svg>
+            </span>
+            <a href="servicii.html" class="link-arrow">
               Află mai multe
             </a>
           </div>
         </div>
+
+        <figure class="hero__frame frame develop js-reveal">
+          <div class="hero__photo">
+            <img class="frame__img" src="assets/web/portret-1600.jpg"
+                 srcset="assets/web/portret-900.jpg 900w, assets/web/portret-1600.jpg 1600w"
+                 sizes="(min-width: 900px) 38vw, 92vw"
+                 width="1600" height="2133" alt="" fetchpriority="high">
+          </div>
+          <figcaption class="frame__no edge">
+            <span>Youth Coaching · Online</span>
+            <span aria-hidden="true">14 ▸ 14A</span>
+          </figcaption>
+        </figure>
+
       </div>
 
-      <div class="hero__scroll-hint" aria-hidden="true">
+      <div class="hero__scroll edge" aria-hidden="true">
         <span>Scroll</span>
-        <div class="hero__scroll-arrow"></div>
       </div>
-
     </section>
 
 
-    <!-- ══════════════════════════════════════
-         DACĂ AI ÎNTRE 18 ȘI 28 DE ANI
-    ══════════════════════════════════════ -->
-    <section class="section section-sage" aria-labelledby="pain-heading">
-      <div class="container">
+    <!-- DACĂ AI ÎNTRE 18 ȘI 28 DE ANI -->
+    <section class="band band--mask pain" aria-labelledby="pain-heading">
+      <div class="wrap">
 
-        <div class="pain-points__intro text-center js-reveal">
-          <span class="label">Dacă ai între 18 și 28 de ani</span>
-          <h2 id="pain-heading" class="section-heading" style="margin-top:0.5rem;">
-            Citește asta
-          </h2>
+        <p class="slate edge">
+          <span>Dacă ai între 18 și 28 de ani</span>
+        </p>
+        <h2 id="pain-heading" class="pain__heading display display--l">
+          Citește asta
+        </h2>
+
+        <div class="strip pain__strip">
+          <ul class="strip__frames pain__frames">
+            <li class="frame frame--text">
+              <p>M-am trezit într-un punct în care nu știu ce urmează, și întrebarea asta mă apasă mai mult decât aș vrea să recunosc.</p>
+              <span class="frame__no edge" aria-hidden="true"><span>01A</span><span>▸</span></span>
+            </li>
+            <li class="frame frame--text">
+              <p>Vreau schimbare, dar nu știu de unde să încep, și cu fiecare zi care trece, indecizia devine mai grea.</p>
+              <span class="frame__no edge" aria-hidden="true"><span>02A</span><span>▸</span></span>
+            </li>
+            <li class="frame frame--text">
+              <p>Mă compar des cu ceilalți și ies în pierdere, parcă toți au un plan, o direcție, o certitudine pe care eu nu o simt.</p>
+              <span class="frame__no edge" aria-hidden="true"><span>03A</span><span>▸</span></span>
+            </li>
+            <li class="frame frame--text">
+              <p>Am senzația că toți știu ce vor să facă în viață, doar eu nu, și asta mă face să mă îndoiesc de mine însumi.</p>
+              <span class="frame__no edge" aria-hidden="true"><span>04A</span><span>▸</span></span>
+            </li>
+          </ul>
         </div>
 
-        <div class="pain-list">
-
-          <div class="pain-item js-reveal">
-            <span class="pain-item__num" aria-hidden="true">01</span>
-            <p class="pain-item__text">
-              M-am trezit într-un punct în care nu știu ce urmează, și întrebarea asta mă apasă mai mult decât aș vrea să recunosc.
-            </p>
-          </div>
-
-          <div class="pain-item js-reveal js-reveal-delay-1">
-            <span class="pain-item__num" aria-hidden="true">02</span>
-            <p class="pain-item__text">
-              Vreau schimbare, dar nu știu de unde să încep, și cu fiecare zi care trece, indecizia devine mai grea.
-            </p>
-          </div>
-
-          <div class="pain-item js-reveal js-reveal-delay-2">
-            <span class="pain-item__num" aria-hidden="true">03</span>
-            <p class="pain-item__text">
-              Mă compar des cu ceilalți și ies în pierdere, parcă toți au un plan, o direcție, o certitudine pe care eu nu o simt.
-            </p>
-          </div>
-
-          <div class="pain-item js-reveal js-reveal-delay-3">
-            <span class="pain-item__num" aria-hidden="true">04</span>
-            <p class="pain-item__text">
-              Am senzația că toți știu ce vor să facă în viață, doar eu nu, și asta mă face să mă îndoiesc de mine însumi.
-            </p>
-          </div>
-
-        </div>
-
-        <div class="pain-points__cta-block js-reveal">
-          <p class="pain-points__cta-text">
+        <div class="pain__cta">
+          <p class="pain__cta-text display display--m">
             Dacă te regăsești în cel puțin una dintre afirmațiile de mai sus, nu mai amâna!
           </p>
           <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
-             class="btn btn--primary btn--lg">
+             class="btn btn--primary">
             Rezervă o ședință gratuită
           </a>
         </div>
@@ -196,92 +164,112 @@
     </section>
 
 
-    <!-- ══════════════════════════════════════
-         DE CE EU (Povestea lui Ștefan)
-    ══════════════════════════════════════ -->
-    <section class="section about-story" aria-labelledby="about-heading">
-      <div class="container">
-        <div class="about-story__inner">
+    <!-- DE CE EU -->
+    <section class="band band--print about" aria-labelledby="about-heading">
+      <div class="wrap">
 
-          <!-- Foto placeholder -->
-          <div class="about-story__visual js-reveal">
-            <div class="about-story__photo-frame">
-              <img src="assets/poza_about_me.jpg" alt="Ștefan Neculicioiu" class="about-story__photo">
-              <div class="about-story__accent-dot" aria-hidden="true"></div>
+        <p class="slate edge">
+          <span>De ce eu</span>
+        </p>
+
+        <div class="about__grid">
+
+          <div class="about__sheet strip">
+            <div class="strip__frames about__frames">
+              <figure class="frame about__frame about__frame--chosen develop js-reveal">
+                <div class="frame__window"><img src="assets/web/portret-900.jpg" alt="Ștefan Neculicioiu" class="frame__img" width="900" height="1200" loading="lazy"></div>
+                <svg class="about__circle" viewBox="0 0 200 260" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="mark-circle__path" d="M40 30 C 90 6, 170 14, 186 70 C 200 130, 190 220, 130 246 C 74 262, 18 236, 12 170 C 6 108, 14 52, 60 24 C 76 16, 96 12, 112 14"/></svg>
+                <figcaption class="frame__no edge" aria-hidden="true"><span>17</span><span>▸ 17A</span></figcaption>
+              </figure>
+              <figure class="frame about__frame about__frame--face develop js-reveal" aria-hidden="true">
+                <div class="frame__window"><img src="assets/web/profil-800.jpg" alt="" class="frame__img" width="800" height="800" loading="lazy"></div>
+                <figcaption class="frame__no edge"><span>18</span><span>▸ 18A</span></figcaption>
+              </figure>
+              <figure class="frame about__frame about__frame--hands develop js-reveal" aria-hidden="true">
+                <div class="frame__window"><img src="assets/web/portret-900.jpg" alt="" class="frame__img" width="900" height="1200" loading="lazy"></div>
+                <figcaption class="frame__no edge"><span>19</span><span>▸ 19A</span></figcaption>
+              </figure>
+              <figure class="frame about__frame about__frame--trees develop js-reveal" aria-hidden="true">
+                <div class="frame__window"><img src="assets/web/portret-900.jpg" alt="" class="frame__img" width="900" height="1200" loading="lazy"></div>
+                <figcaption class="frame__no edge"><span>20</span><span>▸ 20A</span></figcaption>
+              </figure>
             </div>
           </div>
 
-          <!-- Text -->
-          <div class="about-story__text js-reveal js-reveal-delay-1">
-            <span class="label">De ce eu</span>
-            <h2 id="about-heading" style="margin-top:0.5rem;">
+          <div class="about__text">
+            <h2 id="about-heading" class="display display--m">
               Și eu am trecut prin aceeași incertitudine.
             </h2>
 
-            <!-- Mereu vizibil -->
-            <p>
-              Când am terminat liceul la 19 ani, nu aveam habar ce vreau să fac mai departe. Eram deschis la orice și tocmai valul ăsta de opțiuni nelimitate m-a făcut să îngheț de frică, întrebându-mă: <strong>«Și acum ce?»</strong>
-            </p>
-
-            <!-- Expandabil -->
-            <div class="expand-content" id="stefan-story">
+            <div class="prose about__prose">
               <p>
-                Am decis să mă las pe mâna unui prieten care îmi recomandase o școală de arte în Olanda, unde am urmat un curs de videografie timp de șase luni. O experiență cu adevărat frumoasă: am învățat multe, am trăit pe cont propriu într-o țară străină. Însă tot timpul îmi apărea același gând: <strong>«Ok, termin cursul ăsta și după ce?»</strong>
+                Când am terminat liceul la 19 ani, nu aveam habar ce vreau să fac mai departe. Eram deschis la orice și tocmai valul ăsta de opțiuni nelimitate m-a făcut să îngheț de frică, întrebându-mă: <strong>«Și acum ce?»</strong>
               </p>
 
-              <p>
-                Răspunsul a venit de la o colegă de curs care mi-a pus exact aceeași întrebare. Auzind-o din afară, simțindu-mă obligat să răspund, răspunsul a venit aproape instant: <strong>«Vreau să mă întorc acasă și să intru la facultatea de psihologie.»</strong>
-              </p>
+              <div class="expand-content" id="stefan-story">
+                <p>
+                  Am decis să mă las pe mâna unui prieten care îmi recomandase o școală de arte în Olanda, unde am urmat un curs de videografie timp de șase luni. O experiență cu adevărat frumoasă: am învățat multe, am trăit pe cont propriu într-o țară străină. Însă tot timpul îmi apărea același gând: <strong>«Ok, termin cursul ăsta și după ce?»</strong>
+                </p>
 
-              <p>
-                Fusese acolo tot timpul. Aveam nevoie de cineva care să pună întrebarea potrivită. Întors acasă, m-am consultat cu mentorul meu în coaching, Mioara Șoldan MCC, am urmat un an și jumătate de formare, am acumulat peste 40 de ore de experiență în sesiuni și am absolvit Facultatea de Psihologie a Universității Titu Maiorescu în 2026.
-              </p>
+                <p>
+                  Răspunsul a venit de la o colegă de curs care mi-a pus exact aceeași întrebare. Auzind-o din afară, simțindu-mă obligat să răspund, răspunsul a venit aproape instant: <strong>«Vreau să mă întorc acasă și să intru la facultatea de psihologie.»</strong>
+                </p>
 
-              <blockquote class="about-story__highlight">
-                Asta vreau să fac și eu cu tine. Găsim claritate și sens asupra obiectivelor tale și curajul de a face primul pas, printr-un dialog de la egal la egal, fără judecată.
-              </blockquote>
+                <p>
+                  Fusese acolo tot timpul. Aveam nevoie de cineva care să pună întrebarea potrivită. Întors acasă, m-am consultat cu mentorul meu în coaching, Mioara Șoldan MCC, am urmat un an și jumătate de formare, am acumulat peste 40 de ore de experiență în sesiuni și am absolvit Facultatea de Psihologie a Universității Titu Maiorescu în 2026.
+                </p>
+
+                <blockquote class="about__quote">
+                  Asta vreau să fac și eu cu tine. Găsim claritate și sens asupra obiectivelor tale și curajul de a face primul pas, printr-un dialog de la egal la egal, fără judecată.
+                </blockquote>
+              </div>
+
+              <button class="expand-toggle" data-target="stefan-story" aria-expanded="false" aria-controls="stefan-story">
+                <span class="expand-toggle__text">Citește mai mult</span>
+                <em class="expand-toggle__arrow" aria-hidden="true">↓</em>
+              </button>
             </div>
 
-            <button class="expand-toggle" data-target="stefan-story" aria-expanded="false">
-              <span class="expand-toggle__text">Citește mai mult</span>
-              <em class="expand-toggle__arrow" aria-hidden="true">↓</em>
-            </button>
+            <ul class="credentials edge">
+              <li>Formare coaching: 1,5 ani</li>
+              <li>40+ ore de sesiuni</li>
+              <li>Psihologie, Univ. Titu Maiorescu 2026</li>
+              <li>Mentor: Mioara Șoldan MCC</li>
+            </ul>
 
-            <div class="about-story__credentials">
-              <span class="credential-badge">✓ Formare coaching: 1,5 ani</span>
-              <span class="credential-badge">✓ 40+ ore de sesiuni</span>
-              <span class="credential-badge">✓ Psihologie, Univ. Titu Maiorescu 2026</span>
-              <span class="credential-badge">✓ Mentor: Mioara Șoldan MCC</span>
-            </div>
-
-            <div style="margin-top:2rem;">
+            <div class="about__cta">
               <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
                  class="btn btn--primary">
                 Rezervă ședința gratuită de cunoaștere
               </a>
             </div>
-
           </div>
+
         </div>
       </div>
     </section>
 
 
-    <!-- ══════════════════════════════════════
-         FINAL CTA BANNER
-    ══════════════════════════════════════ -->
-    <section class="section--sm section-teal text-center">
-      <div class="container">
-        <div class="js-reveal" style="max-width:620px;margin:0 auto;">
-          <h2 style="margin-bottom:1rem;">Gata să faci primul pas?</h2>
-          <p class="section-intro" style="margin-bottom:2rem;margin-left:auto;margin-right:auto;">
+    <!-- FINAL CTA: frame 36, the end of the roll -->
+    <section class="band band--rebate closing">
+      <div class="wrap closing__grid">
+        <div class="closing__text">
+          <h2 class="display display--l">Gata să faci primul pas?</h2>
+          <p class="lede closing__lede">
             Prima ședință de cunoaștere este gratuită: 90 de minute în care vorbim, fără angajamente.
           </p>
-          <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
-             class="btn btn--primary btn--lg">
-            Rezervă acum, e gratuit
-          </a>
+          <span class="mark-circle js-reveal">
+            <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
+               class="btn btn--primary">
+              Rezervă acum, e gratuit
+            </a>
+            <svg class="mark-circle__svg" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="mark-circle__path" pathLength="1" d="M30 10 C 80 0, 170 2, 194 30 C 204 52, 170 76, 100 78 C 40 79, 2 66, 4 42 C 6 20, 40 8, 90 6 C 110 5, 130 6, 146 9"/></svg>
+          </span>
         </div>
+        <figure class="frame closing__frame develop js-reveal" aria-hidden="true">
+          <img src="assets/web/profil-800.jpg" alt="" class="frame__img" width="800" height="800" loading="lazy">
+          <figcaption class="frame__no edge"><span>36</span><span>▸ 36A</span></figcaption>
+        </figure>
       </div>
     </section>
 

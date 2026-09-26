@@ -812,8 +812,7 @@ body::before {
 .what__grid { display: grid; gap: 2.5rem; }
 .what__title .slate { color: var(--ink-soft); }
 @media (min-width: 1000px) {
-  .what__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 4rem; }
-  .what__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .what__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 4rem; }
   .what__heading { font-size: clamp(2.5rem, 4.2vw, 3.75rem); }
 }
 .what__definition {

@@ -948,3 +948,65 @@ body::before {
 .print .link-arrow { color: var(--ink); }
 
 .pricing__note { margin-top: 2.5rem; color: var(--ink-soft); }
+
+
+/* ============================================================
+   11. BLOG
+   Articles are frames on the sheet that haven't been developed
+   yet: unexposed film with a light leak along one edge.
+   ============================================================ */
+.blog__intro {
+  max-width: 52ch;
+  margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  font-stretch: 104%;
+  font-weight: 500;
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  line-height: 1.45;
+  letter-spacing: -.005em;
+}
+
+.blog__sheet { margin-inline: calc(var(--gutter) * -1); padding-block: 2.75rem; }
+@media (min-width: 1240px) { .blog__sheet { margin-inline: 0; } }
+
+.blog__grid {
+  display: grid;
+  gap: 2.5rem clamp(.75rem, 1.4vw, 1.1rem);
+}
+@media (min-width: 640px)  { .blog__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1000px) { .blog__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+
+.sheet-frame { display: flex; flex-direction: column; }
+
+.sheet-frame__leak {
+  position: relative;
+  display: grid;
+  place-items: center;
+  aspect-ratio: 3 / 2;
+  background: var(--rebate-2);
+  overflow: hidden;
+}
+.sheet-frame__leak::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: .9;
+}
+.sheet-frame__leak--1::before { background: radial-gradient(120% 90% at 100% 0%, var(--mask) 0%, rgba(200, 105, 46, .35) 35%, transparent 65%); }
+.sheet-frame__leak--2::before { background: radial-gradient(90% 120% at 0% 100%, var(--mask) 0%, rgba(200, 105, 46, .3) 30%, transparent 62%); }
+.sheet-frame__leak--3::before { background: linear-gradient(to right, transparent 55%, rgba(232, 163, 61, .35) 80%, var(--mask) 100%); }
+.sheet-frame__soon { position: relative; color: var(--print); opacity: .85; }
+
+.sheet-frame .frame__no { color: var(--edge); }
+
+.sheet-frame__body { padding-top: 1.25rem; }
+.sheet-frame__meta { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; color: var(--fog); }
+.sheet-frame__title {
+  margin-top: .75rem;
+  font-stretch: 104%;
+  font-weight: 700;
+  font-size: clamp(1.25rem, 1.8vw, 1.45rem);
+  line-height: 1.2;
+  letter-spacing: -.01em;
+  text-wrap: balance;
+}
+.sheet-frame__excerpt { margin-top: .75rem; color: var(--fog); font-size: 1rem; }

@@ -530,6 +530,22 @@ body::before {
   transform: none;
   transition: opacity .3s ease, transform .4s var(--ease-out), visibility 0s;
 }
+/* Scroll lock while the menu is open (class set by js/main.js) */
+html.menu-open { overflow: hidden; }
+html.menu-open body {
+  position: fixed;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+}
+html.menu-open .header {
+  position: fixed;
+  top: 0;
+  left: var(--spine);
+  right: 0;
+}
+.mobile-menu { overscroll-behavior: contain; }
+
 .mobile-menu__list li { border-bottom: 1px solid var(--rebate-2); }
 .mobile-menu__link {
   display: flex;

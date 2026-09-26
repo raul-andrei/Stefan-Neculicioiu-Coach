@@ -55,18 +55,32 @@
   const mobileMenu = document.querySelector('.mobile-menu');
 
   if (hamburger && mobileMenu) {
+    // Scroll lock: html has overflow-x set, so overflow on <body> alone
+    // never stops the page (and iOS ignores it anyway). Pin the body in
+    // place at the current offset and restore it on close.
+    const root = document.documentElement;
+    let lockedY = 0;
+
     function openMenu() {
       hamburger.classList.add('is-open');
       mobileMenu.classList.add('is-open');
       hamburger.setAttribute('aria-expanded', 'true');
-      document.body.style.overflow = 'hidden';
+      lockedY = window.scrollY;
+      document.body.style.top = -lockedY + 'px';
+      root.classList.add('menu-open');
     }
 
     function closeMenu() {
+      if (!root.classList.contains('menu-open')) return;
       hamburger.classList.remove('is-open');
       mobileMenu.classList.remove('is-open');
       hamburger.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
+      root.classList.remove('menu-open');
+      document.body.style.top = '';
+      // Jump back without the page's smooth scroll-behavior kicking in
+      root.style.scrollBehavior = 'auto';
+      window.scrollTo(0, lockedY);
+      root.style.scrollBehavior = '';
     }
 
     hamburger.addEventListener('click', function () {

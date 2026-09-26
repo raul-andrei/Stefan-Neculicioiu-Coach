@@ -198,6 +198,10 @@ body::before {
 .band--print ::selection { background: var(--ink); color: var(--print); }
 .band--print :focus-visible,
 .band--mask :focus-visible { outline-color: var(--ink); }
+/* Black surfaces nested inside light bands keep the amber ring */
+.band--print .strip :focus-visible,
+.band--print .booking__plate :focus-visible,
+.band--mask .strip :focus-visible { outline-color: var(--edge); }
 
 /* Slate: a section's frozen label, printed along the film edge
    above the band like the exposure data on a contact sheet,
@@ -398,20 +402,21 @@ body::before {
 
 /* Expand / collapse (hooks used by js/main.js) */
 .js .expand-content {
-  overflow: hidden;
-  max-height: 0;
+  display: grid;
+  grid-template-rows: 0fr;
   opacity: 0;
   visibility: hidden;
-  transition: max-height .6s var(--ease-out), opacity .4s ease, visibility 0s linear .6s;
+  transition: grid-template-rows .6s var(--ease-out), opacity .4s ease, visibility 0s linear .6s;
 }
 .js .expand-content.is-expanded {
-  max-height: 2400px;
+  grid-template-rows: 1fr;
   opacity: 1;
   visibility: visible;
-  transition: max-height .8s var(--ease-out), opacity .5s ease .1s, visibility 0s;
+  transition: grid-template-rows .7s var(--ease-out), opacity .5s ease .1s, visibility 0s;
 }
-.expand-content > * + * { margin-top: 1.1em; }
-.expand-content { padding-top: 1.1em; }
+.expand-content__inner { min-height: 0; overflow: hidden; }
+.expand-content__inner > * + * { margin-top: 1.1em; }
+.expand-content__inner > :first-child { margin-top: 1.1em; }
 
 .expand-toggle {
   display: none;
@@ -887,8 +892,7 @@ body::before {
   .expect__head { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); align-items: end; gap: 4rem; }
 }
 .expect__content { margin-top: 1rem; }
-.expect__strip { margin-top: 2rem; margin-inline: calc(var(--gutter) * -1); }
-@media (min-width: 1240px) { .expect__strip { margin-inline: 0; } }
+.expect__strip { margin-top: 2rem; }
 .expect__frames { grid-template-columns: 1fr; }
 @media (min-width: 640px)  { .expect__frames { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 1100px) { .expect__frames { grid-template-columns: repeat(4, minmax(0, 1fr)); } }

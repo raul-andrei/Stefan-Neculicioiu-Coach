@@ -12,6 +12,10 @@
 (function () {
   'use strict';
 
+  // Tells the inline <head> failsafe that JS-driven states (reveals,
+  // expanders) will work; without it the page falls back to static.
+  window.mainReady = true;
+
   /* ─────────────────────────────────────────────
      A. SCROLL-AWARE HEADER
      Adds .header--scrolled when page is scrolled

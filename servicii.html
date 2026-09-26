@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap">
   <link rel="icon" href="assets/web/profil-800.jpg" type="image/jpeg">
   <link rel="stylesheet" href="css/style.css">
-  <script>document.documentElement.classList.add('js');</script>
+  <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.mainReady)document.documentElement.classList.remove('js');},3000);</script>
 </head>
 <body>
 
@@ -125,12 +125,14 @@
 
             <div class="prose what__more">
               <div class="expand-content" id="coaching-details">
+<div class="expand-content__inner">
                 <p>Nu tratează probleme psihologice, nu oferă soluții gata făcute și nu predă din experiența mea.</p>
                 <p class="what__is">
                   Coaching-ul este un spațiu în care tu ești expertul propriei tale vieți,
                   iar eu sunt cel care pune întrebările potrivite.
                 </p>
               </div>
+</div>
 
               <button class="expand-toggle" data-target="coaching-details" aria-expanded="false" aria-controls="coaching-details">
                 <span class="expand-toggle__text">Citește mai mult</span>
@@ -160,6 +162,7 @@
         </div>
 
         <div class="expand-content expect__content" id="expect-details">
+<div class="expand-content__inner">
           <div class="strip expect__strip">
             <ul class="strip__frames expect__frames">
               <li class="frame frame--text">
@@ -185,6 +188,7 @@
             Coaching-ul nu rezolvă problemele în locul tău. Te ajută să le rezolvi tu.
           </p>
         </div>
+</div>
 
         <button class="expand-toggle" data-target="expect-details" aria-expanded="false" aria-controls="expect-details">
           <span class="expand-toggle__text">Vezi rezultatele</span>

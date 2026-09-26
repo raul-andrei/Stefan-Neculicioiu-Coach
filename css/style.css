@@ -872,19 +872,25 @@ body::before {
 
 /* Prețuri: two frames on one strip, the package frame enlarged */
 .pricing__slate { color: var(--ink-soft); margin-bottom: clamp(2.5rem, 5vw, 4rem); }
-.pricing__strip { margin-inline: calc(var(--gutter) * -1); }
-@media (min-width: 1240px) { .pricing__strip { margin-inline: 0; } }
-.pricing__grid { grid-template-columns: 1fr; align-items: stretch; }
+.pricing__sheet {
+  display: grid;
+  gap: 1rem clamp(.75rem, 1.4vw, 1.1rem);
+}
+.print--1 { order: 1; } .print__body--1 { order: 2; margin-bottom: 2.5rem; }
+.print--2 { order: 3; } .print__body--2 { order: 4; }
 @media (min-width: 900px) {
-  .pricing__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); }
+  .pricing__sheet { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); row-gap: 2.5rem; }
+  .print--1, .print--2 { order: 0; }
+  .print__body--1, .print__body--2 { order: 1; margin-bottom: 0; }
 }
 
 .print {
   display: flex;
   flex-direction: column;
-  background: var(--rebate-2);
   color: var(--print);
 }
+.print .print__plate { flex: 1; background: var(--rebate-2); }
+.print > .frame__no { color: var(--edge); }
 .print__plate {
   position: relative;
   display: grid;
@@ -905,20 +911,23 @@ body::before {
 .print--featured .print__amount { color: var(--mask); }
 .print__note { margin-top: .75rem; color: var(--fog); }
 
-.print__body { flex: 1; padding: 1.75rem clamp(1.5rem, 3vw, 2.25rem) clamp(1.5rem, 3vw, 2.25rem); color: var(--fog); }
+.print__plate { padding-bottom: clamp(1.5rem, 3vw, 2.25rem); }
+
+/* Notes on the paper under each frame, like a lab order */
+.print__body { color: var(--ink-soft); }
 .print__desc { max-width: 44ch; }
-.print__features { margin-top: 1.5rem; border-top: 1px solid var(--rebate-3); }
+.print__features { margin-top: 1.5rem; border-top: 1px solid var(--ink); }
 .print__features li {
   display: flex;
   gap: .75em;
   padding-block: .7rem;
-  border-bottom: 1px solid var(--rebate-3);
-  color: var(--print);
+  border-bottom: 1px solid var(--print-2);
+  color: var(--ink);
 }
 .print__features li::before { content: "▸"; color: var(--mask); }
 .print__cta { margin-top: 2rem; }
-.print .link-arrow { color: var(--print); }
-.print > .frame__no { padding: 0 clamp(1.5rem, 3vw, 2.25rem) 1rem; margin-top: 0; }
+.print__body .link-arrow { color: var(--ink); }
+.print > .frame__no { margin-top: .65rem; }
 
 .pricing__note { margin-top: 2.5rem; color: var(--ink-soft); }
 

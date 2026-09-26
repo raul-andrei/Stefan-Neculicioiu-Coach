@@ -69,218 +69,201 @@
 
   <main>
 
-    <!-- ══════════════════════════════════════
-         PAGE HERO
-    ══════════════════════════════════════ -->
-    <section class="page-hero page-hero--teal" aria-labelledby="services-heading">
-      <div class="page-hero__decoration page-hero__decoration--1" aria-hidden="true"></div>
-      <div class="page-hero__decoration page-hero__decoration--2" aria-hidden="true"></div>
-      <div class="container">
-        <span class="page-hero__label label">Servicii &amp; Prețuri</span>
-        <h1 id="services-heading" class="page-hero__heading">Ce facem împreună</h1>
-        <p class="page-hero__subtitle">
-          Sesiuni online, în confortul spațiului tău.
-        </p>
-      </div>
-    </section>
-
-
-    <!-- ══════════════════════════════════════
-         CE ESTE COACHING-UL
-    ══════════════════════════════════════ -->
-    <section class="section" aria-labelledby="what-heading">
-      <div class="container text-center">
-
-        <div class="js-reveal" style="margin-bottom:3rem;">
-          <span class="label">Înainte de toate</span>
-          <h2 id="what-heading" class="section-heading" style="margin-top:0.5rem;">
-            Ce este coaching-ul?
-          </h2>
-        </div>
-
-        <div class="what-is-coaching__box js-reveal js-reveal-delay-1">
-          <!-- Mereu vizibil -->
-          <p>
-            Coaching-ul este un proces de dezvoltare personală bazat pe dialog, în care
-            <strong>nu îți spun ce să faci</strong>, ci te ajut să descoperi singur ce vrei,
-            ce te oprește și cum poți avansa.
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="services-heading">
+      <div class="wrap page-hero__grid">
+        <div class="page-hero__text">
+          <p class="slate edge"><span>Servicii &amp; Prețuri</span></p>
+          <h1 id="services-heading" class="display display--xl">Ce facem împreună</h1>
+          <p class="lede page-hero__lede">
+            Sesiuni online, în confortul spațiului tău.
           </p>
-
-          <div class="what-is-coaching__not-list">
-            <span class="not-tag"><span class="not-tag__x">✕</span> Nu este terapie</span>
-            <span class="not-tag"><span class="not-tag__x">✕</span> Nu este consultanță</span>
-            <span class="not-tag"><span class="not-tag__x">✕</span> Nu este mentorat</span>
+        </div>
+        <figure class="frame page-hero__frame develop js-reveal" aria-hidden="true">
+          <div class="frame__window page-hero__window">
+            <img src="assets/web/profil-800.jpg" alt="" class="frame__img" width="800" height="800">
           </div>
+          <figcaption class="frame__no edge"><span>21</span><span>▸ 21A</span></figcaption>
+        </figure>
+      </div>
+    </section>
 
-          <!-- Expandabil -->
-          <div class="expand-content" id="coaching-details">
-            <p style="margin-top: var(--space-5);">Nu tratează probleme psihologice, nu oferă soluții gata făcute și nu predă din experiența mea.</p>
-            <p class="what-is-coaching__is">
-              Coaching-ul este un spațiu în care tu ești expertul propriei tale vieți,<br>
-              iar eu sunt cel care pune întrebările potrivite.
+
+    <!-- CE ESTE COACHING-UL -->
+    <section class="band band--print what" aria-labelledby="what-heading">
+      <div class="wrap">
+
+        <p class="slate edge"><span>Înainte de toate</span></p>
+
+        <div class="what__grid">
+          <h2 id="what-heading" class="display display--l what__heading">
+            Ce este <span class="nowrap">coaching-ul?</span>
+          </h2>
+
+          <div class="what__body">
+            <p class="what__definition">
+              Coaching-ul este un proces de dezvoltare personală bazat pe dialog, în care
+              <strong>nu îți spun ce să faci</strong>, ci te ajut să descoperi singur ce vrei,
+              ce te oprește și cum poți avansa.
             </p>
-          </div>
 
-          <button class="expand-toggle" data-target="coaching-details" aria-expanded="false">
-            <span class="expand-toggle__text">Citește mai mult</span>
-            <em class="expand-toggle__arrow" aria-hidden="true">↓</em>
-          </button>
+            <ul class="not-list">
+              <li class="not-list__item">
+                <span>Nu este terapie</span>
+                <svg class="mark-cross" viewBox="0 0 100 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M6 10 C 30 28, 64 52, 94 72 M92 8 C 66 26, 34 50, 8 74"/></svg>
+              </li>
+              <li class="not-list__item">
+                <span>Nu este consultanță</span>
+                <svg class="mark-cross" viewBox="0 0 100 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M8 8 C 34 30, 62 50, 92 74 M94 12 C 64 30, 36 52, 6 70"/></svg>
+              </li>
+              <li class="not-list__item">
+                <span>Nu este mentorat</span>
+                <svg class="mark-cross" viewBox="0 0 100 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M5 12 C 32 30, 66 50, 95 70 M93 6 C 62 30, 32 54, 7 76"/></svg>
+              </li>
+            </ul>
+
+            <div class="prose what__more">
+              <div class="expand-content" id="coaching-details">
+                <p>Nu tratează probleme psihologice, nu oferă soluții gata făcute și nu predă din experiența mea.</p>
+                <p class="what__is">
+                  Coaching-ul este un spațiu în care tu ești expertul propriei tale vieți,
+                  iar eu sunt cel care pune întrebările potrivite.
+                </p>
+              </div>
+
+              <button class="expand-toggle" data-target="coaching-details" aria-expanded="false" aria-controls="coaching-details">
+                <span class="expand-toggle__text">Citește mai mult</span>
+                <em class="expand-toggle__arrow" aria-hidden="true">↓</em>
+              </button>
+            </div>
+          </div>
         </div>
 
       </div>
     </section>
 
 
-    <!-- ══════════════════════════════════════
-         LA CE SĂ TE AȘTEPȚI
-    ══════════════════════════════════════ -->
-    <section class="section--sm section-sage" aria-labelledby="expect-heading">
-      <div class="container">
+    <!-- LA CE SĂ TE AȘTEPȚI -->
+    <section class="band band--mask expect" aria-labelledby="expect-heading">
+      <div class="wrap">
 
-        <div class="text-center js-reveal" style="margin-bottom:3rem;">
-          <span class="label">Rezultate</span>
-          <h2 id="expect-heading" class="section-heading" style="margin-top:0.5rem;">
+        <p class="slate edge"><span>Rezultate</span></p>
+
+        <div class="expect__head">
+          <h2 id="expect-heading" class="display display--l">
             La ce să te aștepți în timp
           </h2>
-          <p style="margin-left:auto;margin-right:auto;">
+          <p class="lede">
             Fiecare om este diferit, însă după 4 până la 8 ședințe, majoritatea clienților observă:
           </p>
         </div>
 
-        <!-- Expandabile: toate 4 + fraza finală -->
-        <div class="expand-content" id="expect-details">
-          <div class="expectations__grid">
-
-            <div class="expectation-item">
-              <div class="expectation-item__icon" aria-hidden="true">01</div>
-              <p class="expectation-item__text">
-                <strong>Mai multă claritate</strong> asupra a ceea ce vor cu adevărat
-              </p>
-            </div>
-
-            <div class="expectation-item">
-              <div class="expectation-item__icon" aria-hidden="true">02</div>
-              <p class="expectation-item__text">
-                <strong>Un prim pas concret</strong> pe care l-au făcut și nu l-ar fi făcut singuri
-              </p>
-            </div>
-
-            <div class="expectation-item">
-              <div class="expectation-item__icon" aria-hidden="true">03</div>
-              <p class="expectation-item__text">
-                <strong>Mai puțină paralizie</strong> în fața deciziilor
-              </p>
-            </div>
-
-            <div class="expectation-item">
-              <div class="expectation-item__icon" aria-hidden="true">04</div>
-              <p class="expectation-item__text">
-                <strong>O relație mai onestă</strong> cu ei înșiși
-              </p>
-            </div>
-
+        <div class="expand-content expect__content" id="expect-details">
+          <div class="strip expect__strip">
+            <ul class="strip__frames expect__frames">
+              <li class="frame frame--text">
+                <p><strong>Mai multă claritate</strong> asupra a ceea ce vor cu adevărat</p>
+                <span class="frame__no edge" aria-hidden="true"><span>01</span><span>▸</span></span>
+              </li>
+              <li class="frame frame--text">
+                <p><strong>Un prim pas concret</strong> pe care l-au făcut și nu l-ar fi făcut singuri</p>
+                <span class="frame__no edge" aria-hidden="true"><span>02</span><span>▸</span></span>
+              </li>
+              <li class="frame frame--text">
+                <p><strong>Mai puțină paralizie</strong> în fața deciziilor</p>
+                <span class="frame__no edge" aria-hidden="true"><span>03</span><span>▸</span></span>
+              </li>
+              <li class="frame frame--text">
+                <p><strong>O relație mai onestă</strong> cu ei înșiși</p>
+                <span class="frame__no edge" aria-hidden="true"><span>04</span><span>▸</span></span>
+              </li>
+            </ul>
           </div>
 
-          <p class="text-center"
-             style="font-style:italic;color:var(--color-text-secondary);margin-top:1.5rem;">
+          <p class="expect__close display display--m">
             Coaching-ul nu rezolvă problemele în locul tău. Te ajută să le rezolvi tu.
           </p>
         </div>
 
-        <div class="text-center">
-          <button class="expand-toggle" data-target="expect-details" aria-expanded="false">
-            <span class="expand-toggle__text">Vezi rezultatele</span>
-            <em class="expand-toggle__arrow" aria-hidden="true">↓</em>
-          </button>
-        </div>
+        <button class="expand-toggle" data-target="expect-details" aria-expanded="false" aria-controls="expect-details">
+          <span class="expand-toggle__text">Vezi rezultatele</span>
+          <em class="expand-toggle__arrow" aria-hidden="true">↓</em>
+        </button>
 
       </div>
     </section>
 
 
-    <!-- ══════════════════════════════════════
-         PREȚURI
-    ══════════════════════════════════════ -->
-    <section class="section" aria-labelledby="pricing-heading">
-      <div class="container">
+    <!-- PREȚURI -->
+    <section class="band band--print pricing" aria-labelledby="pricing-heading">
+      <div class="wrap">
 
-        <div class="text-center js-reveal" style="margin-bottom:3.5rem;">
-          <span class="label">Investiție</span>
-          <h2 id="pricing-heading" class="section-heading" style="margin-top:0.5rem;">
-            Servicii &amp; Prețuri
-          </h2>
-        </div>
+        <p class="slate edge"><span>Investiție</span></p>
 
-        <div class="pricing-grid">
+        <h2 id="pricing-heading" class="display display--l pricing__heading">
+          Servicii &amp; Prețuri
+        </h2>
+
+        <div class="pricing__grid">
 
           <!-- Ședință individuală -->
-          <div class="pricing-card js-reveal js-reveal-delay-1">
-            <h3 class="pricing-card__title">Ședință individuală</h3>
-            <p class="pricing-card__description">
-              O sesiune de 60 de minute, online. Pornim de la ce aduci tu și terminăm cu un pas concret.
-            </p>
-            <div class="pricing-card__price">
-              <span class="pricing-card__price-main">150 lei</span>
-              <p class="pricing-card__price-note">~30 euro · per ședință</p>
+          <article class="print">
+            <div class="print__plate">
+              <h3 class="print__title display display--m">Ședință individuală</h3>
+              <div class="print__price">
+                <span class="print__amount display">150 lei</span>
+                <p class="print__note edge">~30 euro · per ședință</p>
+              </div>
             </div>
-            <ul class="pricing-card__features">
-              <li class="pricing-card__feature">
-                <span class="pricing-card__feature-check" aria-hidden="true">✦</span>
-                60 minute online
-              </li>
-              <li class="pricing-card__feature">
-                <span class="pricing-card__feature-check" aria-hidden="true">✦</span>
-                Pornești de la ce vrei tu să aduci
-              </li>
-              <li class="pricing-card__feature">
-                <span class="pricing-card__feature-check" aria-hidden="true">✦</span>
-                Închei cu un pas concret
-              </li>
-            </ul>
-            <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
-               class="btn btn--outline" style="width:100%;justify-content:center;">
-              Rezervă acum
-            </a>
-          </div>
+            <div class="print__body">
+              <p class="print__desc">
+                O sesiune de 60 de minute, online. Pornim de la ce aduci tu și terminăm cu un pas concret.
+              </p>
+              <ul class="print__features">
+                <li>60 minute online</li>
+                <li>Pornești de la ce vrei tu să aduci</li>
+                <li>Închei cu un pas concret</li>
+              </ul>
+              <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
+                 class="link-arrow print__cta">
+                Rezervă acum
+              </a>
+            </div>
+          </article>
 
           <!-- Pachet 5 ședințe -->
-          <div class="pricing-card pricing-card--featured js-reveal js-reveal-delay-2">
-            <div class="pricing-card__badge">Recomandat</div>
-            <h3 class="pricing-card__title">Pachet 5 ședințe</h3>
-            <p class="pricing-card__description">
-              Cea mai bună variantă dacă vrei un proces real de schimbare. Include ședința gratuită de cunoaștere și 4 ședințe de lucru.
-            </p>
-            <div class="pricing-card__price">
-              <span class="pricing-card__price-main">600 lei</span>
-              <p class="pricing-card__price-note">~120 euro · ședința de cunoaștere gratuită, inclusă</p>
+          <article class="print print--featured">
+            <div class="print__plate">
+              <p class="print__badge edge">Recomandat</p>
+              <h3 class="print__title display display--m">Pachet 5 ședințe</h3>
+              <div class="print__price">
+                <span class="print__amount display">600 lei</span>
+                <p class="print__note edge">~120 euro · ședința de cunoaștere gratuită, inclusă</p>
+              </div>
             </div>
-            <ul class="pricing-card__features">
-              <li class="pricing-card__feature">
-                <span class="pricing-card__feature-check" aria-hidden="true">✦</span>
-                Ședința de cunoaștere: 90 minute, gratuit
-              </li>
-              <li class="pricing-card__feature">
-                <span class="pricing-card__feature-check" aria-hidden="true">✦</span>
-                4 ședințe de lucru × 60 minute
-              </li>
-              <li class="pricing-card__feature">
-                <span class="pricing-card__feature-check" aria-hidden="true">✦</span>
-                Proces real de schimbare, pas cu pas
-              </li>
-              <li class="pricing-card__feature">
-                <span class="pricing-card__feature-check" aria-hidden="true">✦</span>
-                Online: Google Meet
-              </li>
-            </ul>
-            <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
-               class="btn btn--primary" style="width:100%;justify-content:center;">
-              Rezervă pachetul
-            </a>
-          </div>
+            <div class="print__body">
+              <p class="print__desc">
+                Cea mai bună variantă dacă vrei un proces real de schimbare. Include ședința gratuită de cunoaștere și 4 ședințe de lucru.
+              </p>
+              <ul class="print__features">
+                <li>Ședința de cunoaștere: 90 minute, gratuit</li>
+                <li>4 ședințe de lucru × 60 minute</li>
+                <li>Proces real de schimbare, pas cu pas</li>
+                <li>Online: Google Meet</li>
+              </ul>
+              <span class="mark-circle js-reveal print__cta">
+                <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
+                   class="btn btn--primary">
+                  Rezervă pachetul
+                </a>
+                <svg class="mark-circle__svg" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="mark-circle__path" pathLength="1" d="M30 10 C 80 0, 170 2, 194 30 C 204 52, 170 76, 100 78 C 40 79, 2 66, 4 42 C 6 20, 40 8, 90 6 C 110 5, 130 6, 146 9"/></svg>
+              </span>
+            </div>
+          </article>
 
         </div>
 
-        <p class="pricing-note js-reveal">
+        <p class="pricing__note">
           Toate ședințele au loc online, în confortul spațiului tău.<br>
           Prima ședință de cunoaștere este întotdeauna gratuită.
         </p>
@@ -289,22 +272,20 @@
     </section>
 
 
-    <!-- ══════════════════════════════════════
-         FINAL CTA
-    ══════════════════════════════════════ -->
-    <section class="section--sm section-peach text-center">
-      <div class="container">
-        <div class="js-reveal" style="max-width:580px;margin:0 auto;">
-          <h2 style="margin-bottom:1rem;">Ai o întrebare?</h2>
-          <p style="margin-bottom:2rem;margin-left:auto;margin-right:auto;">
+    <!-- FINAL CTA -->
+    <section class="band band--rebate closing">
+      <div class="wrap closing__grid">
+        <div class="closing__text">
+          <h2 class="display display--l">Ai o întrebare?</h2>
+          <p class="lede closing__lede">
             Nu trebuie să ai totul clar înainte să rezervi. De asta există ședința gratuită de cunoaștere.
           </p>
-          <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;">
+          <div class="actions">
             <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
-               class="btn btn--primary btn--lg">
+               class="btn btn--primary">
               Rezervă ședința gratuită
             </a>
-            <a href="contact.html" class="btn btn--ghost btn--lg">Scrie-mi</a>
+            <a href="contact.html" class="link-arrow">Scrie-mi</a>
           </div>
         </div>
       </div>

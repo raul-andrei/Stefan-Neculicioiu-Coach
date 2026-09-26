@@ -17,6 +17,7 @@
    7.  Header, mobile menu, footer
    8.  Motion (develop, draw)
    9.  Acasă
+   9b. Page hero (inner pages)
    10. Servicii
    11. Blog
    12. Contact
@@ -803,3 +804,147 @@ body::before {
   .closing__grid { grid-template-columns: 1fr auto; }
   .closing__frame { width: 260px; }
 }
+
+
+/* ============================================================
+   9b. PAGE HERO (inner pages)
+   ============================================================ */
+.page-hero {
+  background: var(--rebate);
+  padding-block: clamp(3rem, 7vw, 6rem) clamp(3.5rem, 7vw, 5.5rem);
+}
+.page-hero__grid {
+  display: grid;
+  gap: 2.5rem;
+  align-items: end;
+}
+.page-hero .slate { margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+.page-hero h1 { max-width: 14ch; }
+.page-hero__lede { margin-top: 1.75rem; color: var(--fog); }
+.page-hero__frame { display: none; }
+.page-hero__frame .frame__no { color: var(--edge); }
+.page-hero__window { aspect-ratio: 4 / 5; }
+
+@media (min-width: 900px) {
+  .page-hero__grid { grid-template-columns: minmax(0, 1fr) 240px; }
+  .page-hero__frame { display: block; }
+}
+
+
+/* ============================================================
+   10. SERVICII
+   ============================================================ */
+.page-hero__frame .frame__img { height: 100%; object-position: 50% 30%; }
+.nowrap { white-space: nowrap; }
+
+/* Ce este coaching-ul */
+.what__grid { display: grid; gap: 2.5rem; }
+@media (min-width: 1000px) {
+  .what__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 4rem; }
+  .what__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .what__heading { font-size: clamp(2.5rem, 4.2vw, 3.75rem); }
+}
+.what__definition {
+  font-stretch: 104%;
+  font-weight: 500;
+  font-size: clamp(1.3rem, 2.2vw, 1.75rem);
+  line-height: 1.35;
+  letter-spacing: -.01em;
+  text-wrap: pretty;
+}
+.what__definition strong { font-weight: 800; }
+
+.not-list {
+  display: grid;
+  gap: .75rem;
+  margin-top: 2.5rem;
+}
+@media (min-width: 640px) { .not-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.not-list__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 7.5rem;
+  padding: 1rem;
+  border: 1px solid var(--ink);
+  font-stretch: 90%;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--ink-soft);
+}
+.not-list__item .mark-cross { inset: 10% 8%; width: 84%; height: 80%; }
+@media (max-width: 639px) { .not-list__item { min-height: 4.75rem; } }
+
+.what__more { margin-top: 2rem; color: var(--ink-soft); }
+.what__is { color: var(--ink); font-weight: 600; font-size: 1.15rem; }
+
+/* La ce să te aștepți */
+.expect__head { display: grid; gap: 1.75rem; }
+.expect__head .lede { max-width: 34ch; }
+@media (min-width: 1000px) {
+  .expect__head { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); align-items: end; gap: 4rem; }
+}
+.expect__content { margin-top: 1rem; }
+.expect__strip { margin-top: 2rem; margin-inline: calc(var(--gutter) * -1); }
+@media (min-width: 1240px) { .expect__strip { margin-inline: 0; } }
+.expect__frames { grid-template-columns: 1fr; }
+@media (min-width: 640px)  { .expect__frames { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1100px) { .expect__frames { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.expect__frames .frame--text { min-height: 11rem; }
+.expect__frames strong { display: block; margin-bottom: .35rem; color: var(--edge); font-weight: 700; }
+.expect__close { margin-top: 2.5rem; max-width: 24ch; }
+.expect .expand-toggle { margin-top: 2.5rem; }
+
+/* Prețuri: two prints, the package one enlarged */
+.pricing__heading { margin-bottom: clamp(2.5rem, 5vw, 4rem); }
+.pricing__grid {
+  display: grid;
+  gap: 1.5rem;
+  align-items: start;
+}
+@media (min-width: 900px) {
+  .pricing__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); gap: 2rem; }
+}
+
+.print { border: 1px solid var(--ink); background: var(--print); }
+.print__plate {
+  position: relative;
+  display: grid;
+  gap: 2rem;
+  padding: clamp(1.5rem, 3vw, 2.25rem);
+  background: var(--rebate);
+  color: var(--print);
+}
+.print--featured .print__plate { background: var(--mask); color: var(--ink); min-height: 17rem; align-content: space-between; }
+.print__badge {
+  position: absolute;
+  top: clamp(1.5rem, 3vw, 2.25rem);
+  right: clamp(1.5rem, 3vw, 2.25rem);
+  color: var(--ink);
+}
+.print--featured .print__title { padding-right: 7rem; }
+.print__amount {
+  display: block;
+  font-size: clamp(2.75rem, 5.5vw, 4.25rem);
+  line-height: 1;
+}
+.print__note { margin-top: .75rem; }
+.print--featured .print__note { color: var(--ink); }
+
+.print__body { padding: clamp(1.5rem, 3vw, 2.25rem); color: var(--ink-soft); }
+.print__desc { max-width: 44ch; }
+.print__features { margin-top: 1.5rem; border-top: 1px solid var(--print-2); }
+.print__features li {
+  display: flex;
+  gap: .75em;
+  padding-block: .7rem;
+  border-bottom: 1px solid var(--print-2);
+  color: var(--ink);
+}
+.print__features li::before { content: "▸"; color: var(--mask); }
+.print__cta { margin-top: 2rem; }
+.print .link-arrow { color: var(--ink); }
+
+.pricing__note { margin-top: 2.5rem; color: var(--ink-soft); }

@@ -1010,3 +1010,111 @@ body::before {
   text-wrap: balance;
 }
 .sheet-frame__excerpt { margin-top: .75rem; color: var(--fog); font-size: 1rem; }
+
+
+/* ============================================================
+   12. CONTACT
+   ============================================================ */
+.booking__grid { display: grid; gap: 3rem; }
+@media (min-width: 1000px) {
+  .booking__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 5rem; align-items: start; }
+}
+.booking__intro h2 { max-width: 16ch; }
+.booking__text { margin-top: 1.5rem; max-width: 42ch; color: var(--ink-soft); font-size: 1.125rem; }
+
+.booking__plate {
+  display: grid;
+  justify-items: start;
+  gap: 1rem;
+  padding: clamp(1.75rem, 4vw, 3rem);
+  background: var(--rebate);
+  color: var(--print);
+}
+.booking__icon { color: var(--edge); }
+.booking__title { max-width: 14ch; margin-top: .5rem; }
+.booking__cta { margin-top: 1.75rem; }
+.btn--calendly::after {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 8h11M9 3.5 13.5 8 9 12.5' fill='none' stroke='black' stroke-width='1.8'/%3E%3C/svg%3E") center / contain no-repeat;
+          mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 8h11M9 3.5 13.5 8 9 12.5' fill='none' stroke='black' stroke-width='1.8'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+.booking__or { margin-top: 2.5rem; font-weight: 600; }
+
+.channels { margin-top: 1rem; border-top: 1px solid var(--ink); }
+.channel {
+  display: grid;
+  grid-template-columns: auto 6.5rem 1fr;
+  align-items: center;
+  gap: 1rem;
+  padding-block: 1.1rem;
+  border-bottom: 1px solid var(--ink);
+  text-decoration: none;
+  transition: background-color .25s var(--ease-out), padding .25s var(--ease-out);
+}
+.channel:hover { background: var(--print-2); padding-inline: .75rem; }
+.channel__icon { display: flex; color: var(--mask); }
+.channel__label { color: var(--ink-soft); }
+.channel__value {
+  font-stretch: 104%;
+  font-weight: 700;
+  font-size: clamp(1rem, 1.6vw, 1.2rem);
+  overflow-wrap: anywhere;
+}
+@media (max-width: 519px) {
+  .channel { grid-template-columns: auto 1fr; }
+  .channel__value { grid-column: 1 / -1; }
+}
+
+/* FAQ: numbered frames on black */
+.faq__grid { display: grid; gap: 2.5rem; }
+@media (min-width: 1000px) {
+  .faq__grid { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 5rem; align-items: start; }
+  .faq__heading { position: sticky; top: calc(var(--header-h) + 2rem); }
+}
+.faq__list { border-top: 1px solid var(--rebate-3); }
+.faq__item { border-bottom: 1px solid var(--rebate-3); }
+.faq__q {
+  display: grid;
+  grid-template-columns: 2.5rem 1fr 1.25rem;
+  align-items: baseline;
+  gap: 1rem;
+  padding-block: 1.4rem;
+  cursor: pointer;
+  list-style: none;
+  font-stretch: 104%;
+  font-weight: 700;
+  font-size: clamp(1.1rem, 1.7vw, 1.3rem);
+  line-height: 1.3;
+  transition: color .2s ease;
+}
+.faq__q::-webkit-details-marker { display: none; }
+.faq__q:hover { color: var(--edge); }
+.faq__icon {
+  position: relative;
+  align-self: center;
+  width: 1.1rem;
+  height: 1.1rem;
+}
+.faq__icon::before,
+.faq__icon::after {
+  content: "";
+  position: absolute;
+  top: 50%; left: 0;
+  width: 100%;
+  height: 2px;
+  margin-top: -1px;
+  background: var(--mask);
+  transition: transform .35s var(--ease-out);
+}
+.faq__icon::after { transform: rotate(90deg); }
+.faq__item[open] .faq__icon::after { transform: rotate(0deg); }
+.faq__a {
+  padding: 0 2.25rem 1.6rem 3.5rem;
+  max-width: 62ch;
+  color: var(--fog);
+}
+.faq__a em { font-style: italic; color: var(--print); }

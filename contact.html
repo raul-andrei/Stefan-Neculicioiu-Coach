@@ -69,166 +69,162 @@
 
   <main>
 
-    <!-- ══════════════════════════════════════
-         PAGE HERO
-    ══════════════════════════════════════ -->
-    <section class="page-hero page-hero--peach" aria-labelledby="contact-heading">
-      <div class="page-hero__decoration page-hero__decoration--1" aria-hidden="true"></div>
-      <div class="page-hero__decoration page-hero__decoration--2" aria-hidden="true"></div>
-      <div class="container">
-        <span class="page-hero__label label">Contact &amp; Rezervare</span>
-        <h1 id="contact-heading" class="page-hero__heading">Hai să vorbim.</h1>
-        <p class="page-hero__subtitle">
-          Dacă ai ajuns până aici, probabil ceva din ce ai citit a rezonat cu tine.
-          Nu trebuie să ai totul clar înainte să scrii, de asta există prima ședință.
-        </p>
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="contact-heading">
+      <div class="wrap page-hero__grid">
+        <div class="page-hero__text">
+          <p class="slate edge"><span>Contact &amp; Rezervare</span></p>
+          <h1 id="contact-heading" class="display display--xl">Hai să vorbim.</h1>
+          <p class="lede page-hero__lede">
+            Dacă ai ajuns până aici, probabil ceva din ce ai citit a rezonat cu tine.
+            Nu trebuie să ai totul clar înainte să scrii, de asta există prima ședință.
+          </p>
+        </div>
+        <figure class="frame page-hero__frame develop js-reveal" aria-hidden="true">
+          <div class="frame__window page-hero__window">
+            <img src="assets/web/profil-800.jpg" alt="" class="frame__img" width="800" height="800">
+          </div>
+          <figcaption class="frame__no edge"><span>35</span><span>▸ 35A</span></figcaption>
+        </figure>
       </div>
     </section>
 
 
-    <!-- ══════════════════════════════════════
-         CONTACT GRID
-    ══════════════════════════════════════ -->
-    <section class="section" aria-label="Contact și rezervare">
-      <div class="container">
-        <div class="contact-grid">
+    <!-- REZERVARE -->
+    <section class="band band--print booking" aria-label="Contact și rezervare">
+      <div class="wrap">
 
-          <!-- Left col: Booking + direct contact -->
-          <div class="contact-intro js-reveal">
+        <p class="slate edge"><span>Rezervare</span></p>
 
-            <span class="label">Rezervare</span>
-            <h2 style="margin-top:0.5rem; margin-bottom:1rem;">
+        <div class="booking__grid">
+          <div class="booking__intro">
+            <h2 class="display display--m">
               Rezervă ședința gratuită de cunoaștere
             </h2>
-            <p>
+            <p class="booking__text">
               Rezervă mai jos ședința gratuită și vedem împreună cum pot fi util.
               90 de minute, fără presiune, fără angajamente.
             </p>
+          </div>
 
-            <!-- Calendly CTA box -->
-            <!-- NOTĂ: Înlocuiește href cu link-ul tău Calendly real -->
-            <div class="calendly-cta">
-              <div class="calendly-cta__icon" aria-hidden="true">
-                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
-              </div>
-              <h3 class="calendly-cta__title">Ședință gratuită de cunoaștere</h3>
-              <p class="calendly-cta__note">90 minute · Online · Fără costuri</p>
-              <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
-                 class="btn btn--primary btn--lg">
-                Rezervă pe Calendly →
-              </a>
+          <div class="booking__frame">
+            <div class="booking__plate">
+              <svg class="booking__icon" aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+              <h3 class="booking__title display display--m">Ședință gratuită de cunoaștere</h3>
+              <p class="booking__note edge">90 minute · Online · Fără costuri</p>
+              <span class="mark-circle js-reveal booking__cta">
+                <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
+                   class="btn btn--primary btn--calendly">
+                  Rezervă pe Calendly
+                </a>
+                <svg class="mark-circle__svg" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="mark-circle__path" pathLength="1" d="M30 10 C 80 0, 170 2, 194 30 C 204 52, 170 76, 100 78 C 40 79, 2 66, 4 42 C 6 20, 40 8, 90 6 C 110 5, 130 6, 146 9"/></svg>
+              </span>
             </div>
 
-            <p style="margin-bottom:1.25rem; font-weight:600; color:var(--color-text);">
+            <p class="booking__or">
               Sau dacă preferi să scrii mai întâi:
             </p>
 
-            <div class="contact-channels">
-
+            <div class="channels">
               <a href="mailto:stefanneculicioiu@gmail.com"
-                 class="contact-channel"
+                 class="channel"
                  aria-label="Trimite email lui Ștefan">
-                <div class="contact-channel__icon-wrap contact-channel__icon-wrap--email"
-                     aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
-                </div>
-                <div>
-                  <div class="contact-channel__label">Email</div>
-                  <div class="contact-channel__value">stefanneculicioiu@gmail.com</div>
-                </div>
+                <span class="channel__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16"/><path d="m2 7 10 7 10-7"/></svg></span>
+                <span class="channel__label edge">Email</span>
+                <span class="channel__value">stefanneculicioiu@gmail.com</span>
               </a>
-
               <a href="https://wa.me/40744494721" target="_blank" rel="noopener"
-                 class="contact-channel"
+                 class="channel"
                  aria-label="Scrie pe WhatsApp lui Ștefan">
-                <div class="contact-channel__icon-wrap contact-channel__icon-wrap--whatsapp"
-                     aria-hidden="true">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4caf6e" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                </div>
-                <div>
-                  <div class="contact-channel__label">WhatsApp</div>
-                  <div class="contact-channel__value">+40 744 494 721</div>
-                </div>
+                <span class="channel__icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.41 2 2 0 0 1 3.6 1.24h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                <span class="channel__label edge">WhatsApp</span>
+                <span class="channel__value">+40 744 494 721</span>
               </a>
-
             </div>
           </div>
+        </div>
 
-          <!-- Right col: FAQ -->
-          <div class="js-reveal js-reveal-delay-1">
-            <span class="label">Întrebări frecvente</span>
-            <h2 style="margin-top:0.5rem; margin-bottom:1.5rem;">
-              Poate ai câteva întrebări
-            </h2>
+      </div>
+    </section>
 
-            <div class="contact-faq">
 
-              <details class="contact-faq__item">
-                <summary>
-                  Cum decurge prima ședință?
-                  <em class="contact-faq__arrow" aria-hidden="true">+</em>
-                </summary>
-                <p class="contact-faq__answer">
-                  Prima ședință de cunoaștere durează 90 de minute și este complet gratuită.
+    <!-- FAQ -->
+    <section class="band band--rebate faq" aria-labelledby="faq-heading">
+      <div class="wrap">
+
+        <p class="slate edge"><span>Întrebări frecvente</span></p>
+
+        <div class="faq__grid">
+          <h2 id="faq-heading" class="display display--l faq__heading">
+            Poate ai câteva întrebări
+          </h2>
+
+          <div class="faq__list">
+            <details class="faq__item">
+              <summary class="faq__q">
+                <span class="faq__no edge" aria-hidden="true">01</span>
+                <span class="faq__text">Cum decurge prima ședință?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <p class="faq__a">
+                Prima ședință de cunoaștere durează 90 de minute și este complet gratuită.
                   Nu are un format rigid, e o conversație în care tu povestești unde te afli,
                   ce te preocupă, și vedem împreună dacă și cum pot fi util. Fără presiune,
                   fără angajamente.
-                </p>
-              </details>
-
-              <details class="contact-faq__item">
-                <summary>
-                  Trebuie să știu exact cu ce problemă vin?
-                  <em class="contact-faq__arrow" aria-hidden="true">+</em>
-                </summary>
-                <p class="contact-faq__answer">
-                  Nu. De fapt, mulți oameni vin tocmai pentru că <em>nu știu</em> exact cu ce vin.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q">
+                <span class="faq__no edge" aria-hidden="true">02</span>
+                <span class="faq__text">Trebuie să știu exact cu ce problemă vin?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <p class="faq__a">
+                Nu. De fapt, mulți oameni vin tocmai pentru că <em>nu știu</em> exact cu ce vin.
                   „Nu știu ce vreau" sau „mă simt blocat" sunt puncte de pornire perfect valide.
                   Claritatea apare în procesul de coaching, nu înainte.
-                </p>
-              </details>
-
-              <details class="contact-faq__item">
-                <summary>
-                  Online funcționează la fel de bine?
-                  <em class="contact-faq__arrow" aria-hidden="true">+</em>
-                </summary>
-                <p class="contact-faq__answer">
-                  Da. Toate ședințele au loc online, pe Google Meet, și experiența
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q">
+                <span class="faq__no edge" aria-hidden="true">03</span>
+                <span class="faq__text">Online funcționează la fel de bine?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <p class="faq__a">
+                Da. Toate ședințele au loc online, pe Google Meet, și experiența
                   este la fel de personală și de profundă ca față în față. Avantajul:
                   te conectezi din confortul spațiului tău, oriunde ești în lume.
-                </p>
-              </details>
-
-              <details class="contact-faq__item">
-                <summary>
-                  Ce diferență e între coaching și terapie?
-                  <em class="contact-faq__arrow" aria-hidden="true">+</em>
-                </summary>
-                <p class="contact-faq__answer">
-                  Terapia lucrează adesea cu trecutul și tratează probleme psihologice.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q">
+                <span class="faq__no edge" aria-hidden="true">04</span>
+                <span class="faq__text">Ce diferență e între coaching și terapie?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <p class="faq__a">
+                Terapia lucrează adesea cu trecutul și tratează probleme psihologice.
                   Coaching-ul se concentrează pe prezent și viitor: pe ce vrei, ce te
                   oprește și cum poți avansa. Nu înlocuiește terapia și nu tratează
                   tulburări psihologice.
-                </p>
-              </details>
-
-              <details class="contact-faq__item">
-                <summary>
-                  Câte ședințe am nevoie?
-                  <em class="contact-faq__arrow" aria-hidden="true">+</em>
-                </summary>
-                <p class="contact-faq__answer">
-                  Depinde de ce îți dorești să obții. O singură ședință poate aduce
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary class="faq__q">
+                <span class="faq__no edge" aria-hidden="true">05</span>
+                <span class="faq__text">Câte ședințe am nevoie?</span>
+                <span class="faq__icon" aria-hidden="true"></span>
+              </summary>
+              <p class="faq__a">
+                Depinde de ce îți dorești să obții. O singură ședință poate aduce
                   claritate imediată. Un proces mai profund de schimbare se întâmplă
                   de obicei în 4–8 ședințe. Discutăm asta la prima ședință gratuită.
-                </p>
-              </details>
-
-            </div>
+              </p>
+            </details>
           </div>
-
         </div>
+
       </div>
     </section>
 

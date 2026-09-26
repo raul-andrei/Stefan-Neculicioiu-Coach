@@ -15,6 +15,7 @@
   <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.mainReady)document.documentElement.classList.remove('js');},3000);</script>
 </head>
 <body>
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><filter id="grease" x="-10%" y="-25%" width="120%" height="150%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="1.7" numOctaves="1" seed="3" result="g"/><feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.4 2.05" result="gaps"/><feComposite in="d" in2="gaps" operator="in"/></filter></defs></svg>
 
   <!-- ========== HEADER START ========== -->
   <header class="header" role="banner">
@@ -94,12 +95,13 @@
     <section class="band band--print what" aria-labelledby="what-heading">
       <div class="wrap">
 
-        <p class="slate edge"><span>Înainte de toate</span></p>
-
         <div class="what__grid">
-          <h2 id="what-heading" class="display display--l what__heading">
+          <div class="what__title">
+            <h2 id="what-heading" class="display display--l what__heading">
             Ce este <span class="nowrap">coaching-ul?</span>
           </h2>
+            <p class="slate edge"><span>Înainte de toate</span></p>
+          </div>
 
           <div class="what__body">
             <p class="what__definition">
@@ -110,16 +112,16 @@
 
             <ul class="not-list">
               <li class="not-list__item">
+                <svg class="not-list__box" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="1" y="1" width="38" height="38"/><path d="M7 8 C 16 16, 25 25, 33 33 M33 7 C 24 16, 15 25, 7 34"/></svg>
                 <span>Nu este terapie</span>
-                <svg class="mark-cross" viewBox="0 0 100 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M6 10 C 30 28, 64 52, 94 72 M92 8 C 66 26, 34 50, 8 74"/></svg>
               </li>
               <li class="not-list__item">
+                <svg class="not-list__box" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="1" y="1" width="38" height="38"/><path d="M7 8 C 16 16, 25 25, 33 33 M33 7 C 24 16, 15 25, 7 34"/></svg>
                 <span>Nu este consultanță</span>
-                <svg class="mark-cross" viewBox="0 0 100 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M8 8 C 34 30, 62 50, 92 74 M94 12 C 64 30, 36 52, 6 70"/></svg>
               </li>
               <li class="not-list__item">
+                <svg class="not-list__box" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect x="1" y="1" width="38" height="38"/><path d="M7 8 C 16 16, 25 25, 33 33 M33 7 C 24 16, 15 25, 7 34"/></svg>
                 <span>Nu este mentorat</span>
-                <svg class="mark-cross" viewBox="0 0 100 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path d="M5 12 C 32 30, 66 50, 95 70 M93 6 C 62 30, 32 54, 7 76"/></svg>
               </li>
             </ul>
 
@@ -150,12 +152,13 @@
     <section class="band band--mask expect" aria-labelledby="expect-heading">
       <div class="wrap">
 
-        <p class="slate edge"><span>Rezultate</span></p>
-
         <div class="expect__head">
-          <h2 id="expect-heading" class="display display--l">
+          <div>
+            <h2 id="expect-heading" class="display display--l">
             La ce să te aștepți în timp
           </h2>
+            <p class="slate edge"><span>Rezultate</span></p>
+          </div>
           <p class="lede">
             Fiecare om este diferit, însă după 4 până la 8 ședințe, majoritatea clienților observă:
           </p>
@@ -203,16 +206,16 @@
     <section class="band band--print pricing" aria-labelledby="pricing-heading">
       <div class="wrap">
 
-        <p class="slate edge"><span>Investiție</span></p>
-
         <h2 id="pricing-heading" class="display display--l pricing__heading">
           Servicii &amp; Prețuri
         </h2>
+        <p class="slate edge pricing__slate"><span>Investiție</span></p>
 
-        <div class="pricing__grid">
+        <div class="strip pricing__strip">
+        <div class="strip__frames pricing__grid">
 
           <!-- Ședință individuală -->
-          <article class="print">
+          <article class="frame print">
             <div class="print__plate">
               <h3 class="print__title display display--m">Ședință individuală</h3>
               <div class="print__price">
@@ -234,10 +237,11 @@
                 Rezervă acum
               </a>
             </div>
+            <p class="frame__no edge" aria-hidden="true"><span>30</span><span>▸ 30A</span></p>
           </article>
 
           <!-- Pachet 5 ședințe -->
-          <article class="print print--featured">
+          <article class="frame print print--featured">
             <div class="print__plate">
               <p class="print__badge edge">Recomandat</p>
               <h3 class="print__title display display--m">Pachet 5 ședințe</h3>
@@ -256,16 +260,17 @@
                 <li>Proces real de schimbare, pas cu pas</li>
                 <li>Online: Google Meet</li>
               </ul>
-              <span class="mark-circle js-reveal print__cta">
+              <div class="print__cta">
                 <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
                    class="btn btn--primary">
                   Rezervă pachetul
                 </a>
-                <svg class="mark-circle__svg" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="mark-circle__path" pathLength="1" d="M30 10 C 80 0, 170 2, 194 30 C 204 52, 170 76, 100 78 C 40 79, 2 66, 4 42 C 6 20, 40 8, 90 6 C 110 5, 130 6, 146 9"/></svg>
-              </span>
+              </div>
             </div>
+            <p class="frame__no edge" aria-hidden="true"><span>31</span><span>▸ 31A</span></p>
           </article>
 
+        </div>
         </div>
 
         <p class="pricing__note">
@@ -286,10 +291,13 @@
             Nu trebuie să ai totul clar înainte să rezervi. De asta există ședința gratuită de cunoaștere.
           </p>
           <div class="actions">
-            <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
+            <span class="mark-circle js-reveal">
+              <a href="https://calendly.com/stefanneculicioiu" target="_blank" rel="noopener"
                class="btn btn--primary">
               Rezervă ședința gratuită
             </a>
+              <svg class="mark-circle__svg" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g filter="url(#grease)"><path class="mark-circle__path" pathLength="1" d="M176 14 C 130 2, 40 4, 10 30 C -2 52, 34 78, 106 77 C 168 76, 200 60, 196 38 C 192 18, 150 8, 96 7 C 76 7, 60 9, 44 13"/><path class="mark-circle__path mark-circle__path--ghost" pathLength="1" transform="translate(1.6 1.2)" d="M176 14 C 130 2, 40 4, 10 30 C -2 52, 34 78, 106 77 C 168 76, 200 60, 196 38 C 192 18, 150 8, 96 7 C 76 7, 60 9, 44 13"/></g></svg>
+            </span>
             <a href="contact.html" class="link-arrow">Scrie-mi</a>
           </div>
         </div>

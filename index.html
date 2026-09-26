@@ -16,6 +16,7 @@
   <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.mainReady)document.documentElement.classList.remove('js');},3000);</script>
 </head>
 <body>
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><filter id="grease" x="-10%" y="-25%" width="120%" height="150%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="1.7" numOctaves="1" seed="3" result="g"/><feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.4 2.05" result="gaps"/><feComposite in="d" in2="gaps" operator="in"/></filter></defs></svg>
 
   <!-- ========== HEADER START ========== -->
   <header class="header" role="banner">
@@ -90,7 +91,7 @@
                  class="btn btn--primary">
                 Rezervă o ședință gratuită de cunoaștere
               </a>
-              <svg class="mark-circle__svg" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="mark-circle__path" pathLength="1" d="M30 10 C 80 0, 170 2, 194 30 C 204 52, 170 76, 100 78 C 40 79, 2 66, 4 42 C 6 20, 40 8, 90 6 C 110 5, 130 6, 146 9"/></svg>
+              <svg class="mark-circle__svg" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g filter="url(#grease)"><path class="mark-circle__path" pathLength="1" d="M30 10 C 80 0, 170 2, 194 30 C 204 52, 170 76, 100 78 C 40 79, 2 66, 4 42 C 6 20, 40 8, 90 6 C 110 5, 130 6, 146 9"/><path class="mark-circle__path mark-circle__path--ghost" pathLength="1" transform="translate(1.6 1.2)" d="M30 10 C 80 0, 170 2, 194 30 C 204 52, 170 76, 100 78 C 40 79, 2 66, 4 42 C 6 20, 40 8, 90 6 C 110 5, 130 6, 146 9"/></g></svg>
             </span>
             <a href="servicii.html" class="link-arrow">
               Află mai multe
@@ -123,12 +124,11 @@
     <section class="band band--mask pain" aria-labelledby="pain-heading">
       <div class="wrap">
 
-        <p class="slate edge">
-          <span>Dacă ai între 18 și 28 de ani</span>
-        </p>
         <h2 id="pain-heading" class="pain__heading display display--l">
           Citește asta
         </h2>
+
+        <p class="slate edge"><span>Dacă ai între 18 și 28 de ani</span></p>
 
         <div class="strip pain__strip">
           <ul class="strip__frames pain__frames">
@@ -169,17 +169,12 @@
     <section class="band band--print about" aria-labelledby="about-heading">
       <div class="wrap">
 
-        <p class="slate edge">
-          <span>De ce eu</span>
-        </p>
-
         <div class="about__grid">
 
           <div class="about__sheet strip">
             <div class="strip__frames about__frames">
               <figure class="frame about__frame about__frame--chosen develop js-reveal">
                 <div class="frame__window"><img src="assets/web/portret-900.jpg" alt="Ștefan Neculicioiu" class="frame__img" width="900" height="1200" loading="lazy"></div>
-                <svg class="about__circle" viewBox="0 0 200 260" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="mark-circle__path" d="M40 30 C 90 6, 170 14, 186 70 C 200 130, 190 220, 130 246 C 74 262, 18 236, 12 170 C 6 108, 14 52, 60 24 C 76 16, 96 12, 112 14"/></svg>
                 <figcaption class="frame__no edge" aria-hidden="true"><span>17</span><span>▸ 17A</span></figcaption>
               </figure>
               <figure class="frame about__frame about__frame--face develop js-reveal" aria-hidden="true">
@@ -201,6 +196,7 @@
             <h2 id="about-heading" class="display display--m">
               Și eu am trecut prin aceeași incertitudine.
             </h2>
+            <p class="slate edge"><span>De ce eu</span></p>
 
             <div class="prose about__prose">
               <p>
@@ -266,7 +262,7 @@
                class="btn btn--primary">
               Rezervă acum, e gratuit
             </a>
-            <svg class="mark-circle__svg" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="mark-circle__path" pathLength="1" d="M30 10 C 80 0, 170 2, 194 30 C 204 52, 170 76, 100 78 C 40 79, 2 66, 4 42 C 6 20, 40 8, 90 6 C 110 5, 130 6, 146 9"/></svg>
+            <svg class="mark-circle__svg" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><g filter="url(#grease)"><path class="mark-circle__path" pathLength="1" d="M22 22 C 50 4, 150 0, 188 22 C 206 38, 188 70, 120 76 C 60 81, 8 70, 6 46 C 4 28, 30 12, 78 8 C 100 6, 118 7, 132 10"/><path class="mark-circle__path mark-circle__path--ghost" pathLength="1" transform="translate(1.6 1.2)" d="M22 22 C 50 4, 150 0, 188 22 C 206 38, 188 70, 120 76 C 60 81, 8 70, 6 46 C 4 28, 30 12, 78 8 C 100 6, 118 7, 132 10"/></g></svg>
           </span>
         </div>
         <figure class="frame closing__frame develop js-reveal" aria-hidden="true">

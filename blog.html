@@ -15,6 +15,7 @@
   <script>document.documentElement.classList.add('js');setTimeout(function(){if(!window.mainReady)document.documentElement.classList.remove('js');},3000);</script>
 </head>
 <body>
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><filter id="grease" x="-10%" y="-25%" width="120%" height="150%"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="7" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="2.4" xChannelSelector="R" yChannelSelector="G" result="d"/><feTurbulence type="fractalNoise" baseFrequency="1.7" numOctaves="1" seed="3" result="g"/><feColorMatrix in="g" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2.4 2.05" result="gaps"/><feComposite in="d" in2="gaps" operator="in"/></filter></defs></svg>
 
   <!-- ========== HEADER START ========== -->
   <header class="header" role="banner">
@@ -100,7 +101,7 @@
         <div class="strip blog__sheet">
           <div class="blog__grid">
           <article class="sheet-frame" aria-labelledby="art1-title">
-            <div class="sheet-frame__leak sheet-frame__leak--1">
+            <div class="sheet-frame__leak">
               <span class="sheet-frame__soon edge">În curând</span>
             </div>
             <p class="frame__no edge" aria-hidden="true"><span>24</span><span>▸ 24A</span></p>
@@ -119,7 +120,7 @@
             </div>
           </article>
           <article class="sheet-frame" aria-labelledby="art2-title">
-            <div class="sheet-frame__leak sheet-frame__leak--2">
+            <div class="sheet-frame__leak">
               <span class="sheet-frame__soon edge">În curând</span>
             </div>
             <p class="frame__no edge" aria-hidden="true"><span>25</span><span>▸ 25A</span></p>
@@ -139,7 +140,7 @@
             </div>
           </article>
           <article class="sheet-frame" aria-labelledby="art4-title">
-            <div class="sheet-frame__leak sheet-frame__leak--3">
+            <div class="sheet-frame__leak">
               <span class="sheet-frame__soon edge">În curând</span>
             </div>
             <p class="frame__no edge" aria-hidden="true"><span>26</span><span>▸ 26A</span></p>
@@ -158,7 +159,7 @@
             </div>
           </article>
           <article class="sheet-frame" aria-labelledby="art5-title">
-            <div class="sheet-frame__leak sheet-frame__leak--1">
+            <div class="sheet-frame__leak">
               <span class="sheet-frame__soon edge">În curând</span>
             </div>
             <p class="frame__no edge" aria-hidden="true"><span>27</span><span>▸ 27A</span></p>
@@ -177,7 +178,7 @@
             </div>
           </article>
           <article class="sheet-frame" aria-labelledby="art6-title">
-            <div class="sheet-frame__leak sheet-frame__leak--2">
+            <div class="sheet-frame__leak">
               <span class="sheet-frame__soon edge">În curând</span>
             </div>
             <p class="frame__no edge" aria-hidden="true"><span>28</span><span>▸ 28A</span></p>
@@ -196,7 +197,7 @@
             </div>
           </article>
           <article class="sheet-frame" aria-labelledby="art3-title">
-            <div class="sheet-frame__leak sheet-frame__leak--3">
+            <div class="sheet-frame__leak">
               <span class="sheet-frame__soon edge">În curând</span>
             </div>
             <p class="frame__no edge" aria-hidden="true"><span>29</span><span>▸ 29A</span></p>
@@ -223,13 +224,10 @@
         <div class="closing__text">
           <h2 class="display display--l">Vrei să fii primul care citește?</h2>
           <p class="lede closing__lede">Scrie-mi pe email și te anunț când apare un articol nou.</p>
-          <span class="mark-circle js-reveal">
-            <a href="mailto:stefanneculicioiu@gmail.com?subject=Vreau să fiu anunțat despre articole noi"
+          <a href="mailto:stefanneculicioiu@gmail.com?subject=Vreau să fiu anunțat despre articole noi"
                class="btn btn--primary">
               Anunță-mă prin email
             </a>
-            <svg class="mark-circle__svg" viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="mark-circle__path" pathLength="1" d="M30 10 C 80 0, 170 2, 194 30 C 204 52, 170 76, 100 78 C 40 79, 2 66, 4 42 C 6 20, 40 8, 90 6 C 110 5, 130 6, 146 9"/></svg>
-          </span>
         </div>
       </div>
     </section>
